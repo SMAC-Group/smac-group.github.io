@@ -4,8 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+The current members of the SMAC Group are:
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+|-----------------+------------|
+| ![Stephane Guerrier](/assets/images/staff/sguerrier.jpg) | **Stephane Guerrier **|
+| | Stéphane Guerrier obtained a M.Sc. in navigation techniques and geomatics engineering from the Swiss Federal Institute of Technology Lausanne (EPFL) in 2008 for his work on the integration of redundant MEMS-IMUs with GPS. He also obtained a Ph.D in statistics from the University of Geneva in 2013. His research focuses on time series and model selection. He is now an Assistant Professor in the Department of Statistics of the University of Illinois at Urbana-Champaign.|
+|-----------------+------------|
