@@ -1,0 +1,18 @@
+# Site settings
+title: SMAC Group
+email: contact@smac-group.com
+description: > # this means to ignore newlines until "baseurl:"
+  Statistical Methods, Applications & Computations Group 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://smac-group.com" # the base hostname & protocol for your site
+twitter_username: smac-group
+github_username: smac-group
+
+# Build settings
+permalink: "/:categories/:title"
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge 
