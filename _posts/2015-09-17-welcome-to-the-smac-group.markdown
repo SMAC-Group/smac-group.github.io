@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to the SMAC Group!"
+author: James Balamuta
 date:   2015-09-17 10:22:52
 categories: conference
 tags: Generalized Method of Wavelet Moments
