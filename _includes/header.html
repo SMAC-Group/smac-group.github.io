@@ -1,12 +1,10 @@
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
-    <a href="{{ site.baseurl }}" class="logo">
-    	{% if site.logo %}
-      <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
-      {% else %}
-      <span>{{ site.title }}</span>
-      {% endif %}
-    </a>
+    <span class="logo">
+      <span><a a href="{{ site.baseurl }}">{{ site.title }}</a> <br />
+          <span class="nav-link">Statistical Methods, Applications &amp; Computations Group</span>
+        </span>
+    </span>
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
     	<i class="fa fa-bars"></i>
     </a>
