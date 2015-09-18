@@ -25,4 +25,8 @@ The current members of the SMAC Group are:
     <td><img src="{{ "assets/images/staff/hxu.jpg" | prepend: site.baseurl }}" alt="Haotian Xu"/></td>
     <td><b>Haotian Xu</b></td>
   </tr>
+   <tr>
+    <td><img src="{{ "assets/images/staff/wyang.jpg" | prepend: site.baseurl }}" alt="Wenchao Yang"/></td>
+    <td><b>Wenchao Yang</b></td>
+  </tr>
 </table>
