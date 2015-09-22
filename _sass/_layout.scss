@@ -249,8 +249,11 @@ pre code.hljs {
 	img {
 		display: block;
 		margin: auto;
-		width: 50%;
-        height: 50%;
+		width: 90%;
+        .staff-picture{
+            width: 250px;
+            height: 250px;
+        }
 	}
 	/*
 	*	Posts
