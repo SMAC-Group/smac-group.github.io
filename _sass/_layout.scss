@@ -246,14 +246,19 @@ pre code.hljs {
 			}
 		}
 	}
+    img.staff-picture{
+        width: 250px;
+        height: 250px;
+    }
+    ul{
+        .staff-details{
+            list-style-type: none;
+        }
+    }
 	img {
 		display: block;
 		margin: auto;
 		width: 90%;
-        img.staff-picture{
-            width: 250px;
-            height: 250px;
-        }
 	}
 	/*
 	*	Posts
