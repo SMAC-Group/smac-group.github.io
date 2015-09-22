@@ -17,7 +17,7 @@ The current members of the SMAC Group are:
       	</li>
         <li>
             <i class="fa fa-home"></i>
-            <span><a href="http://smac-group.com">smac-group.com</a></span>
+            <span><a href="http://publish.illinois.edu/stephane/">publish.illinois.edu/stephane</a></span>
       	</li>
         </ul>
   </td>
