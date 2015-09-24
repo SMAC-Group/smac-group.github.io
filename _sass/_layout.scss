@@ -88,8 +88,8 @@ pre code.hljs {
 	.scrim {
 		padding: 3em 1em;
 		&.has-cover {
-			background-color: rgba(0,0,0,0.2);
-			/* padding: 6em 1em !important;
+			/*background-color: rgba(0,0,0,0.2);
+			 padding: 6em 1em !important;
 			@include media($tablet) {
 				padding: 9em 1em !important;
 			}*/
@@ -237,6 +237,7 @@ pre code.hljs {
 		color: $white;
 		text-shadow: 0 2px 1px rgba(0,0,0,0.33);
 		background-color: $highlight-color;
+        min-height: 200px;
 		.site-header{
 			.title {
 				font-size: modular-scale(6);
@@ -338,6 +339,8 @@ pre code.hljs {
  		}
         .post-title2{
             color:$blue;
+            margin-top: .3em;
+            margin-bottom: -.25em;
         }
         .subtitle{
             color:$dark-gray;
