@@ -1,10 +1,10 @@
 # Site settings
 title: SMAC Group
-subtitle: "Statistical Methods, Applications & Computations Group"
+subtitle: "Statistical Methods, Applications &amp; Computing Group"
 name: SMAC Group
 email: contact@smac-group.com
 description: > # this means to ignore newlines until "baseurl:"
-  Statistical Methods, Applications & Computations Group 
+  Statistical Methods, Applications &amp; Computing Group 
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://smac-group.com" # the base hostname & protocol for your site
 twitter_username: smac-group
