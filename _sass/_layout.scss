@@ -271,6 +271,9 @@ pre code.hljs {
 				padding: 2em 1em 1em 1em;
 			}
 		}
+        .subtitle{
+            margin-top: -.25em;
+        }
 		.post-meta {
 			padding-bottom: 1em;
 		}
@@ -333,6 +336,12 @@ pre code.hljs {
 			margin: auto;
 			padding-bottom: 0.5em;
  		}
+        .post-title2{
+            color:$blue;
+        }
+        .subtitle{
+            color:$dark-gray;
+        }
 	}
 }
 
