@@ -8,7 +8,7 @@ The current members of the SMAC Group are:
 
 <table>
   <tr>
-  <td><img src="{{ "assets/images/staff/sguerrier.pdf" | prepend: site.baseurl }}" height="42" width="42" alt="Stéphane Guerrier"/ ></td>
+  <td><img src="{{ "assets/images/staff/sguerrier.jpg" | prepend: site.baseurl }}" height="42" width="42" alt="Stéphane Guerrier"/ ></td>
     <td><b>Stéphane Guerrier</b> <br/> <br/>
     Stéphane Guerrier obtained a M.Sc. in navigation techniques and geomatics engineering from the Swiss Federal Institute of Technology Lausanne (EPFL) in 2008 for his work on the integration of redundant MEMS-IMUs with GPS. He also obtained a Ph.D in statistics from the University of Geneva in 2013. His research focuses on time series and model selection. He is now an Assistant Professor in the Department of Statistics of the University of Illinois at Urbana-Champaign.</td>
   </tr>
@@ -27,6 +27,7 @@ The current members of the SMAC Group are:
   </tr>
    <tr>
     <td><img src="{{ "assets/images/staff/wyang.jpg" | prepend: site.baseurl }}" alt="Wenchao Yang"/></td>
-    <td><b>Wenchao Yang</b></td>
+    <td><b>Wenchao Yang</b><br /><br /> 
+	Wenchao Yang is in his senior year of undergraduate studies working toward a Bachelor of Science in Statistics with Minor in Computer Science. His interests lie in the convergence of Statistics with Computer Science. Outside of SMAC, he holds a teaching fellowship position at the Margolis Market Information Lab within the College of Business. In his free time he enjoys learning new theories, algorithms and applying them to solve real life problems.</td>
   </tr>
 </table>
