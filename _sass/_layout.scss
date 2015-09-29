@@ -70,7 +70,8 @@ pre code.hljs {
 }
 
 .site-header-container, .post-header-container {
-	width: 100%;
+    @include outer-container;
+    /* width: 100%; */
 	text-align: center;
 	&.has-cover {
 		color: $white;
@@ -87,11 +88,11 @@ pre code.hljs {
 	.scrim {
 		padding: 3em 1em;
 		&.has-cover {
-			background-color: rgba(0,0,0,0.2);
-			padding: 6em 1em !important;
+			/*background-color: rgba(0,0,0,0.2);
+			 padding: 6em 1em !important;
 			@include media($tablet) {
 				padding: 9em 1em !important;
-			}
+			}*/
 		}
 	}
 }
@@ -100,7 +101,7 @@ pre code.hljs {
 *	Header
 */
 .navigation {
-	box-shadow: 0 2px $highlight-color;
+	/* box-shadow: 0 2px $highlight-color; */
 	padding: 0 1em;
 	margin: 0;
 	/*
@@ -236,6 +237,7 @@ pre code.hljs {
 		color: $white;
 		text-shadow: 0 2px 1px rgba(0,0,0,0.33);
 		background-color: $highlight-color;
+        min-height: 200px;
 		.site-header{
 			.title {
 				font-size: modular-scale(6);
@@ -246,6 +248,13 @@ pre code.hljs {
 			}
 		}
 	}
+    img.staff-picture{
+        width: 250px;
+        height: 250px;
+    }
+    ul.staff-details{
+        list-style-type: none;
+    }
 	img {
 		display: block;
 		margin: auto;
@@ -263,6 +272,9 @@ pre code.hljs {
 				padding: 2em 1em 1em 1em;
 			}
 		}
+        .subtitle{
+            margin-top: -.25em;
+        }
 		.post-meta {
 			padding-bottom: 1em;
 		}
@@ -325,6 +337,14 @@ pre code.hljs {
 			margin: auto;
 			padding-bottom: 0.5em;
  		}
+        .post-title2{
+            color:$blue;
+            margin-top: .3em;
+            margin-bottom: -.25em;
+        }
+        .subtitle{
+            color:$dark-gray;
+        }
 	}
 }
 
