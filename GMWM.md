@@ -4,5 +4,4 @@ title: GMWM
 permalink: /GMWM/
 ---
 
-
-lzkcvj
+The Generalized Method of Wavelet Moments (GMWM) is a method that enables the decomposition of latent processes within Time Series.
