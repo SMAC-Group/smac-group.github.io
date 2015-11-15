@@ -88,7 +88,9 @@ PhD Students:
     <td><b>Gaetan Bakalli</b></td>
   </tr>
   <tr>
- 
+</table>   
+ Undergraduate:
+<table>
     <td><img src="{{ "assets/images/staff/wyang.jpg" | prepend: site.baseurl }}" alt="Wenchao Yang"/>
 	    <ul class="staff-details">
             <li>
@@ -97,9 +99,6 @@ PhD Students:
             </li>
         </ul>
 	</td>
-</table>  
-Undergraduate:
-<table>
     <td><b>Wenchao Yang</b><br /><br /> 
 	Wenchao Yang is in his senior year of undergraduate studies working toward a Bachelor of Science in Statistics with Minor in Computer Science. His interests lie in the convergence of Statistics with Computer Science. Outside of SMAC, he holds a teaching fellowship position at the Margolis Market Information Lab within the College of Business. In his free time he enjoys learning new theories, algorithms and applying them to solve real life problems.
     </td>
