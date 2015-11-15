@@ -23,9 +23,9 @@ This method was originally proposed for the estimation of latent time series mod
 <p align="justify">
 An interesting feature of the GMWM, is that it can be made robust by providing a robust version of the quantity it is based on (i.e. the WV) providing as a results a new framework for the robust estimation of time series models. Indeed, as far as robust time series inference goes, existing literature has mainly aimed at the estimation of specific time series models (see e.g. Maronna et al., 2006). The implementation of these methods in statistical and quantitative analysis softwares is lacking, if not absent, in the majority of cases. Within this framework, we proposed in Guerrier et al. (2014) and Guerrier et al. (2015c) a robust version of the WV as well as of the GMWM (RGMWM) based on M-estimation techniques. This computationally efficient approach has, among others, the following properties:</p>
 <p align="justify">
-*Widely applicable: as opposed to many proposed robust approaches for time series models estimation, the RGMWM is very general and can estimate a wide range of models such as ARMA or a variety of SSM;</p>
+* Widely applicable: as opposed to many proposed robust approaches for time series models estimation, the RGMWM is very general and can estimate a wide range of models such as ARMA or a variety of SSM;</p>
 <p align="justify">
-*Consistent and asymptotically normally distributed: under mild conditions the RGMWM has convenient asymptotic properties allowing for adequate estimation and inference.</p>
+* Consistent and asymptotically normally distributed: under mild conditions the RGMWM has convenient asymptotic properties allowing for adequate estimation and inference.</p>
 
 # Papers
 
