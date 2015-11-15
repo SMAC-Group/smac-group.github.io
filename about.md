@@ -81,7 +81,7 @@ PhD Students:
         <ul class="staff-details">
             <li>
                 <i class="fa fa-envelope-o"></i>
-                <span class="username">gaetan.bakalli (AT) etu.unige (dot) EDU</span>
+                <span class="username">gaetan.bakalli (AT) etu.unige (dot) ch</span>
             </li>
         </ul>
    </td>
