@@ -27,10 +27,10 @@ As an illustration, we also present here the results of an emulation study (see 
 # Papers
 
 * Stebler, Y., Guerrier, S. & Skaloud, J., “An Approach for Observing and Modeling Errors in MEMS-based Inertial Sensors under Vehicle Dynamic”. IEEE Transactions on Instrumentation and Measurement, 2015. [Full text](/assets/pdfs/Modeling Errors in MEMS-Based Inertial Sensors.pdf)
-* Stebler, Y., Guerrier, S., Skaloud, J. & Victoria-Feser, M.-P., “The Generalized Method of Wavelet Moments for Inertial Navigation Filter Design”, IEEE Transactions on Aerospace and Electronic Systems, 2014.[Full text](/assets/pdfs/GMWM.pdf)
-* Guerrier, S., Skaloud, J., Waegli, A. & Victoria-Feser, M.-P., “Fault Detection and Isolation in Multiple MEMS-IMUs Configurations”, IEEE Transactions on Aerospace and Electronic Systems, 2012. [Full text](/assets/pdfs/GMWM.pdf)
-* Stebler, Y., Guerrier, S., Skaloud, J. & Victoria-Feser, M.-P., “Constrained EM Algorithm for Stochastic Inertial Error Modelling: Study of Feasibility”, Journal of Measurement Science & Technology, 2011.[Full text](/assets/pdfs/GMWM.pdf)
-* Waegli, A., Skaloud, J., Guerrier, S., Par ́es, M. & Colomina, I., “Noise Reduction and Estimation in Multiple Micro-Electro-Mechanical Inertial Systems”, Journal of Measurement Science & Technology, 2010. [Full text](/assets/pdfs/GMWM.pdf)
+* Stebler, Y., Guerrier, S., Skaloud, J. & Victoria-Feser, M.-P., “The Generalized Method of Wavelet Moments for Inertial Navigation Filter Design”, IEEE Transactions on Aerospace and Electronic Systems, 2014.[Full text](/assets/pdfs/The Generalized Method of Wavelet Moments for Inertial Navigation Filter Design.pdf)
+* Guerrier, S., Skaloud, J., Waegli, A. & Victoria-Feser, M.-P., “Fault Detection and Isolation in Multiple MEMS-IMUs Configurations”, IEEE Transactions on Aerospace and Electronic Systems, 2012. [Full text](/assets/pdfs/Fault Detection and Isolation in Multiple MEMS-IMUs Configurationspdf.pdf)
+* Stebler, Y., Guerrier, S., Skaloud, J. & Victoria-Feser, M.-P., “Constrained EM Algorithm for Stochastic Inertial Error Modelling: Study of Feasibility”, Journal of Measurement Science & Technology, 2011.[Full text](/assets/pdfs/Constrained EM algorithm for stochastic inertial error modeling.pdf)
+* Waegli, A., Skaloud, J., Guerrier, S., Par ́es, M. & Colomina, I., “Noise Reduction and Estimation in Multiple Micro-Electro-Mechanical Inertial Systems”, Journal of Measurement Science & Technology, 2010. [Full text](/assets/pdfs/Noise reduction and estimation in multiple micro-electro-mechanical inertial systems.pdf)
 
 
 # Proceedings
