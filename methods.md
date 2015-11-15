@@ -4,7 +4,6 @@ title: Methods
 permalink: /methods/
 ---
 
-SMAC has a very strong methods background. Below are methods based posts:
 
 <ul class="posts-list">
 	{% for post in site.categories['methods'] %}
