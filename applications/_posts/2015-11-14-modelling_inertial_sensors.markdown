@@ -33,9 +33,15 @@ As an illustration, we also present here the results of an emulation study (see 
 * Waegli, A., Skaloud, J., Guerrier, S., Par ́es, M. & Colomina, I., “Noise Reduction and Estimation in Multiple Micro-Electro-Mechanical Inertial Systems”, Journal of Measurement Science & Technology, 2010. [Full text](/assets/pdfs/GMWM.pdf)
 
 
-# Talks
-
-
-
+# Proceedings
+* Balamuta, J., Molinari, R., Guerrier, S. & Skaloud, J., “A Computationally Efficient Platform for Inertial Sensor Calibration”, in Proceedings of the ION GNSS 2015, Tampa, FL, USA, 2015.[Full Presentation](/assets/pdfs/gmwm_ion2015_part1.pdf)
+* Molinari, R., Balamuta, J., Guerrier, S. & Skaloud, J., “Automatic and Computationally Efficient Method For Model Selection In Inertial Sensor Calibration”, in Proceedings of the ION GNSS 2015, Tampa, FL, USA, 2015. [Full Presentation](/assets/pdfs/gmwm_ion2015_part2.pdf)
+* Stebler, Y., Guerrier, S., Skaloud, J., Molinari, R., & Victoria-Feser, M.-P., “Study of MEMS-based Inertial Sensors Operating in Dynamic Conditions”, in Proceedings of IEEE/ION PLANS 2014, Monterey, CA, USA, 2014.
+* Guerrier, S., Molinari, Skaloud, J. & Victoria-Feser, M.-P., “An Algorithm for Auto- matic Inertial Sensors Calibration”, in Proceedings of the ION GNSS 2013, Nashville, TN, USA, 2013.
+* Stebler, Y., Guerrier, S., Skaloud, J. & Victoria-Feser, M.-P., “A Framework for Inertial Sensor Calibration Using Complex Stochastic Error Models”, in Proceedings of IEEE/ION PLANS 2012, Myrtle Beach, SC, USA, 2012.
+* Stebler, Y., Guerrier, S., Skaloud, J. & Victoria-Feser, M.-P., “Improving Modeling of MEMS-IMUs Operating in GNSS-denied Conditions”, in Proceedings of the ION GNSS 2011, Portland, OR, USA, 2011.
+* Guerrier, S., Skaloud, J., Waegli, A. & Victoria-Feser, M.-P.,“Robust FDI in Redundant MEMS-IMUs Systems”, EuroCow, the Calibration and Orientation Workshop (Euro- pean Spatial Data Research), Barcelona, Spain, 2010.
+* Guerrier, S., “Improving Accuracy with Multiple Sensors: Study of Redundant MEMS- IMU/GPS Configurations”, in Proceedings of the ION GNSS 2009, Savannah, GA, USA, 2009.
+* Waegli, A., Guerrier, S. & Skaloud, J., “Redundant MEMS-IMU integrated with GPS for Performance Assessment in Sports”, in Proceedings of IEEE/ION PLANS 2008, Monterey, CA, USA, 2008.
 
 # Software
