@@ -11,15 +11,24 @@ tags:
 
 The GMWM is a very general method for the estimation of many time series models and is particularly advantageous for the estimation of latent time series or State-Space Models (SSM). Stebler et al. (2011) showed that for these models the traditional Maximum Likelihood (ML) and other related estimators often lead to unreliable results even in moderately complex settings. On the other hand, GMWM-based estimators can easily overcome these difficulties and can also surprisingly outperform the ML for more traditional models such as ARMA models (see e.g. Guerrier et al., 2015c). Using a quantity called Wavelet Variance (WV), the idea behind the GMWM can be extended to a wide range of dependent data settings going from the modeling of latent time series and SSM to non-stationary
 and spatio-temporal models.
+The WV is the variance of the wavelet coefficients (Wj,t) issued from a wavelet decomposition of a time series where j indicates the scale of decomposition and t the time. This quantity provides in some sense a discrete approximation of the spectral density function and efficiently summarizes the information contained in the latter (under certain conditions). Denoting the WV with ν and θ the parameter vector of a given time series model denoted as Fθ, the GMWM estimator is given by the following optimization problem:
+θˆ = argmin (νˆ − ν(θ))T Ω (νˆ − ν(θ)) θ∈Θ
+where νˆ is the WV estimated from the sample, ν(θ) is the WV implied by the model Fθ and Ω is an appropriately chosen positive definite weighting matrix. Under certain regularity conditions, this estimator is consistent and asymptotically normal for many time series models (see Guerrier et al., 2013 for details).
+This method was originally proposed for the estimation of latent time series models, which can be represented as SSM, but it is sufficiently general to estimate a wide range of time series models, including “classical” models such as ARMA models. Latent time series models are commonly used
+1in many domains such as engineering or natural sciences as well as finance and others (see e.g. Guerrier, 2013 for a detailed discussion on these models). Generally being very complicated and/or computationally intensive to estimate, the GMWM manages to estimate these models by providing a method which, among others, is (i) straightforward to implement, (ii) as computationally efficient as the well-known fast Fourier transform and (iii) has appropriate asymptotic properties.
+An interesting feature of the GMWM, is that it can be made robust by providing a robust version of the quantity it is based on (i.e. the WV) providing as a results a new framework for the robust estimation of time series models. Indeed, as far as robust time series inference goes, existing literature has mainly aimed at the estimation of specific time series models (see e.g. Maronna et al., 2006). The implementation of these methods in statistical and quantitative analysis softwares is lacking, if not absent, in the majority of cases. Within this framework, we proposed in Guerrier et al. (2014) and Guerrier et al. (2015c) a robust version of the WV as well as of the GMWM (RGMWM) based on M-estimation techniques. This computationally efficient approach has, among others, the following properties:
+• Widely applicable: as opposed to many proposed robust approaches for time series models estimation, the RGMWM is very general and can estimate a wide range of models such as ARMA or a variety of SSM;
+• Consistent and asymptotically normally distributed: under mild conditions the RGMWM has convenient asymptotic properties allowing for adequate estimation and inference.
+In the next two sections, we present a simulation study to investigate the finite-sample performance as well as the robustness properties of the (R)GMWM and then an example which illustrates the practical benefits of the GMWM for some engineering applications.
 
 # Papers
 
-* Guerrier, S., Stebler, Y., Skaloud, J. & Victoria-Feser, M.-P., “Wavelet-Variance-Based Estimation for Composite Stochastic Processes”, Journal of the American Statistical Association (Theory & Methods), 2013.[full link](/assets/pdfs/GMWM.pdf)
+* Guerrier, S., Stebler, Y., Skaloud, J. & Victoria-Feser, M.-P., “Wavelet-Variance-Based Estimation for Composite Stochastic Processes”, Journal of the American Statistical Association (Theory & Methods), 2013.[Full text](/assets/pdfs/GMWM.pdf)
 * 
 
 # Talks
 
-* [USC Presentation on Robust GMWM](/assets/pdfs/usc_2015_rgmwm.pdf)
+* [Full ling](/assets/pdfs/usc_2015_rgmwm.pdf)
 * 
 
 
