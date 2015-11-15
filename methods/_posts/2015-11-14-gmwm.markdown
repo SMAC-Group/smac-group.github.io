@@ -34,8 +34,8 @@ An interesting feature of the GMWM, is that it can be made robust by providing a
 
 # Talks
 
-* “Robust Inference for Time Series: a Wavelet-Based Framework ”[Full Presentation](/assets/pdfs/usc_2015_rgmwm.pdf)
-* “Wavelet-Variance-Based Estimation of Latent Time Series Models”[Full Presentation](/assets/pdfs/TAMU.pdf)
+* “Robust Inference for Time Series: a Wavelet-Based Framework”. [Full Presentation](/assets/pdfs/usc_2015_rgmwm.pdf)
+* “Wavelet-Variance-Based Estimation of Latent Time Series Models”. [Full Presentation](/assets/pdfs/TAMU.pdf)
 
 
 # Software
