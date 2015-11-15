@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "GMWM"
-author: Stephane Guerrier
 date:   2015-11-14 18:22:52
 tags: 
 - Generalized Method of Wavelet Moments
@@ -15,10 +14,7 @@ Text here describing the method
 # Papers
 
 * [first paper](/assets/pdfs/usc_2015_rgmwm.pdf)
-*
-*
-*
-*
+* 
 
 # Talks
 
