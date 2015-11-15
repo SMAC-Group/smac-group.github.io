@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "GMWM"
+title:  "Generalized Method of Wavelet Moments"
 date:   2015-11-14 18:22:52
 tags: 
 - Generalized Method of Wavelet Moments
 - Robust Statistics
+- Wavelet
+- Latent Time Series
 ---
 
 # Intro
@@ -32,8 +34,6 @@ An interesting feature of the GMWM, is that it can be made robust by providing a
 
 # Talks
 
-* “Robust Inference for Time Series: a Wavelet-Based Framework”. [Full Presentation](/assets/pdfs/usc_2015_rgmwm.pdf)
-* “Wavelet-Variance-Based Estimation of Latent Time Series Models”. [Full Presentation](/assets/pdfs/TAMU.pdf)
+* Robust Inference for Time Series: a Wavelet-Based Framework was presented in the following statistical seminars: University of Southern Carolina (2015), Oregon State University (2015) & University of Illinois, Urbana-Champaign (2015) [Full Presentation](/assets/pdfs/usc_2015_rgmwm.pdf)
+* Wavelet-Variance-Based Estimation of Latent Time Series Models was presented in the following statistical seminars: University of California, Santa Barbara (2013), University of Illinois, Urbana-Champaign (2014), Texas A&M University (2014), Georges Mason University (2104) & Bocconi University (2014)  [Full Presentation](/assets/pdfs/TAMU.pdf)
 
-
-# Software
