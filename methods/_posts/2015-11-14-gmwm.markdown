@@ -29,12 +29,12 @@ An interesting feature of the GMWM, is that it can be made robust by providing a
 
 # Papers
 
-* Guerrier, S., Stebler, Y., Skaloud, J. & Victoria-Feser, M.-P., “Wavelet-Variance-Based Estimation for Composite Stochastic Processes”, Journal of the American Statistical Association (Theory & Methods), 2013.[Full text](/assets/pdfs/GMWM.pdf)
+* Guerrier, S., Stebler, Y., Skaloud, J. & Victoria-Feser, M.-P., “Wavelet-Variance-Based Estimation for Composite Stochastic Processes”, Journal of the American Statistical Association (Theory & Methods), 2013.<a href=http://www.example.com>Link</a>, [Full text](/assets/pdfs/GMWM.pdf)
 * 
 
 # Talks
 
-* [Full ling](/assets/pdfs/usc_2015_rgmwm.pdf)
+* [Full link](/assets/pdfs/usc_2015_rgmwm.pdf)
 * 
 
 
