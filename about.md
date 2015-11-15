@@ -87,10 +87,11 @@ PhD Students:
    </td>
     <td><b>Gaetan Bakalli</b></td>
   </tr>
-  <tr>
-</table>   
- Undergraduate:
+</table>
+
+Undergraduate:
 <table>
+  <tr>
     <td><img src="{{ "assets/images/staff/wyang.jpg" | prepend: site.baseurl }}" alt="Wenchao Yang"/>
 	    <ul class="staff-details">
             <li>
