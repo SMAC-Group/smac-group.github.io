@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: landing
 title:  "Generalized Method of Wavelet Moments"
 date:   2015-11-14 18:22:52
 tags: 
