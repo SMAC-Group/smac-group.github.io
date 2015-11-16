@@ -19,7 +19,7 @@ The WV is the variance of the wavelet coefficients $\left(W_j,t\right)$ issued f
 
 $$
 \begin{align*}
-\mathop {\arg \min } \limits_\theta  \left( {\hat \nu  - \nu \left( \theta  \right)} \right)\Omega \left( {\hat v - v\left( \theta  \right)} \right) $
+\mathop {\arg \min } \limits_\theta  \left( {\hat \nu  - \nu \left( \theta  \right)} \right)\Omega \left( {\hat v - v\left( \theta  \right)} \right)
 \end{align*}
 $$
 
