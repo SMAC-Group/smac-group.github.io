@@ -7,6 +7,7 @@ tags:
 - Robust Statistics
 - Wavelet
 - Latent Time Series
+mathjax: true
 ---
 
 # Intro
