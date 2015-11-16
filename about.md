@@ -7,7 +7,7 @@ permalink: /about/
 The current members of the SMAC Group are listed below by title.
 
 
-Professors:
+**Professors:**
 
 <table>
   <tr>
@@ -29,9 +29,22 @@ Professors:
   </tr>
 </table>
 
-PhD Students:
+**PhD Students:**
  
 <table>
+    <tr>
+    <td><img src="{{ "assets/images/staff/gbakalli.jpg" | prepend: site.baseurl }}" alt="Gaetan Bakalli" class="staff-picture" />
+      <br />
+      
+        <ul class="staff-details">
+            <li>
+                <i class="fa fa-envelope-o"></i>
+                <span class="username">gaetan.bakalli (AT) etu.unige (dot) ch</span>
+            </li>
+        </ul>
+   </td>
+    <td><b>Gaetan Bakalli</b></td>
+  </tr>
   <tr>
     <td><img src="{{ "assets/images/staff/jjbalamuta.jpg" | prepend: site.baseurl }}" alt="James Balamuta" class="staff-picture" />
       <br />
@@ -74,22 +87,11 @@ PhD Students:
     <td><b>Haotian Xu</b><br /><br />
     Haotian Xu is a graduate student in the Research Center for Statistics at the University of Geneva (UNIGE) studying towards a Ph.D degree under the supervision of Prof. Maria-Pia Victoria-Feser and Prof. Stéphane Guerrier. Before pursuing Ph.D, he earned a M.Sc. degree in Statistics at University of Illinois Urbana-Champaign (UIUC). His research interests lies in the Wavelet Methods and estimation for State-Space Models (SSM).</td>
   </tr>
-    <tr>
-    <td><img src="{{ "assets/images/staff/gbakalli.jpg" | prepend: site.baseurl }}" alt="James Balamuta" class="staff-picture" />
-      <br />
-      
-        <ul class="staff-details">
-            <li>
-                <i class="fa fa-envelope-o"></i>
-                <span class="username">gaetan.bakalli (AT) etu.unige (dot) ch</span>
-            </li>
-        </ul>
-   </td>
-    <td><b>Gaetan Bakalli</b></td>
-  </tr>
 </table>
 
-Undergraduate:
+<!-- **Graduate Students:** -->
+
+**Undergraduate Students:**
 <table>
   <tr>
     <td><img src="{{ "assets/images/staff/wyang.jpg" | prepend: site.baseurl }}" alt="Wenchao Yang"/>
@@ -105,3 +107,5 @@ Undergraduate:
     </td>
   </tr>
 </table>
+
+<!-- **Alumi:** -->

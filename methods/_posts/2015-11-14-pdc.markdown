@@ -1,18 +1,16 @@
 ---
-layout: post
+layout: landing
 title:  "Prediction Divergence Criterion"
 date:   2015-11-14 22:53:52
 tags: 
 - Prediction Divergence Criterion
 - Model selection
-
 ---
 
 # Intro
-<p align="justify">
-In Guerrier and Victoria-Feser (2015) we proposed a new class of error measures, called the d-class, which takes from Efron’s q-class (Efron, 1986) and derived the associated “optimism” theorem. This enables one to easily construct model selection criteria which are consistent estimators of the error measure of interest. Additionally, we proposed a criterion directly based on a discrepancy measure between two models’ predictions. This criterion is particularly suitable when the amount of information at hand is extremely large, like when the number of potential explanatory variables (p) is considerable or even larger than the number of observations (n). In these case sequential methods are therefore usually preferred for their computational speed. Under suitable conditions and for a given loss function, this approach enables one to choose between a consistent or an asymptotically loss efficient criterion. The latter is derived from the “optimism” theorem we proposed for the d-class of error measures.</p>
-<p align="justify">
-This selection procedure was developed for linear regression models and smoothing splines. The problem of identifying the order of an autoregressive model and the determination of the random structure of linear mixed models were also investigated in Guerrier (2013). In finite samples, simulation studies indicate that in “sparse” settings this methodology has not only a better performance in terms of probability of choosing the correct model, but also that its mean squared error of prediction is considerably smaller compared to alternative methods such as the lasso (Tibshirani, 1996). I am currently working on extending these results to generalized linear models in the p ≫ n setting with the intention of applying this methodology to microarray gene expression problems.</p>
+In Guerrier and Victoria-Feser (2015) we proposed a new class of error measures, called the d-class, which takes from Efron’s q-class (Efron, 1986) and derived the associated “optimism” theorem. This enables one to easily construct model selection criteria which are consistent estimators of the error measure of interest. Additionally, we proposed a criterion directly based on a discrepancy measure between two models’ predictions. This criterion is particularly suitable when the amount of information at hand is extremely large, like when the number of potential explanatory variables (p) is considerable or even larger than the number of observations (n). In these case sequential methods are therefore usually preferred for their computational speed. Under suitable conditions and for a given loss function, this approach enables one to choose between a consistent or an asymptotically loss efficient criterion. The latter is derived from the “optimism” theorem we proposed for the d-class of error measures.
+
+This selection procedure was developed for linear regression models and smoothing splines. The problem of identifying the order of an autoregressive model and the determination of the random structure of linear mixed models were also investigated in Guerrier (2013). In finite samples, simulation studies indicate that in “sparse” settings this methodology has not only a better performance in terms of probability of choosing the correct model, but also that its mean squared error of prediction is considerably smaller compared to alternative methods such as the lasso (Tibshirani, 1996). I am currently working on extending these results to generalized linear models in the p ≫ n setting with the intention of applying this methodology to microarray gene expression problems.
 
 
 # Papers
