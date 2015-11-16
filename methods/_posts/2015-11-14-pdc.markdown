@@ -6,6 +6,7 @@ tags:
 - Model selection
 - Stepwise regression
 - Large and sparse datasets
+mathjax: true
 ---
 
 
@@ -13,7 +14,7 @@ The problem of model selection is inevitable in an increasingly large number of 
 
 # Papers
 
-* Guerrier, S. & Victoria-Feser, M.-P., “A Prediction Divergence Criterion for Model
+* Guerrier, S. and Victoria-Feser, M.-P., “A Prediction Divergence Criterion for Model
 Selection". (This paper will be uploaded soon)
 
 # Talks
