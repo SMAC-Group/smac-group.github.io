@@ -72,7 +72,7 @@ The current members of the SMAC Group are listed below by title.
         </ul>
     </td>
     <td><b>Haotian Xu</b><br /><br />
-    Haotian Xu is a graduate student in the Research Center for Statistics at the University of Geneva (UNIGE) studying towards a Ph.D degree under the supervision of Prof. Maria-Pia Victoria-Feser and Prof. Stéphane Guerrier. Before pursuing Ph.D, he earned a M.Sc. degree in Statistics at University of Illinois Urbana-Champaign (UIUC). His research interests lies in the Wavelet Methods and estimation for State-Space Models (SSM).</td>
+    Haotian Xu is a graduate student in the Research Center for Statistics at the University of Geneva studying towards a Ph.D degree under the supervision of Prof. Maria-Pia Victoria-Feser and Prof. Stéphane Guerrier. Before pursuing Ph.D, he earned a M.Sc. degree in Statistics at University of Illinois Urbana-Champaign. His research interests lies in the wavelet methods and estimation for state-space models.</td>
   </tr>
 </table>
 
