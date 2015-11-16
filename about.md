@@ -94,7 +94,7 @@ The current members of the SMAC Group are listed below by title.
 **Undergraduate Students:**
 <table>
   <tr>
-    <td><img src="{{ "assets/images/staff/wyang.jpg" | prepend: site.baseurl }}" alt="Wenchao Yang"/>
+    <td><img src="{{ "assets/images/staff/wyang.jpg" | prepend: site.baseurl }}" alt="Wenchao Yang" class="staff-picture"/>
 	    <ul class="staff-details">
             <li>
                 <i class="fa fa-envelope-o"></i>
