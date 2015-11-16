@@ -32,19 +32,6 @@ The current members of the SMAC Group are listed below by title.
 **PhD Students:**
  
 <table>
-    <tr>
-    <td><img src="{{ "assets/images/staff/gbakalli.jpg" | prepend: site.baseurl }}" alt="Gaetan Bakalli" class="staff-picture" />
-      <br />
-      
-        <ul class="staff-details">
-            <li>
-                <i class="fa fa-envelope-o"></i>
-                <span class="username">gaetan.bakalli (AT) etu.unige (dot) ch</span>
-            </li>
-        </ul>
-   </td>
-    <td><b>Gaetan Bakalli</b></td>
-  </tr>
   <tr>
     <td><img src="{{ "assets/images/staff/jjbalamuta.jpg" | prepend: site.baseurl }}" alt="James Balamuta" class="staff-picture" />
       <br />
@@ -89,7 +76,23 @@ The current members of the SMAC Group are listed below by title.
   </tr>
 </table>
 
-<!-- **Graduate Students:** -->
+**Masters Students:**
+
+<table>
+    <tr>
+    <td><img src="{{ "assets/images/staff/gbakalli.jpg" | prepend: site.baseurl }}" alt="Gaetan Bakalli" class="staff-picture" />
+      <br />
+      
+        <ul class="staff-details">
+            <li>
+                <i class="fa fa-envelope-o"></i>
+                <span class="username">gaetan.bakalli (AT) etu.unige (dot) ch</span>
+            </li>
+        </ul>
+   </td>
+    <td><b>Gaetan Bakalli</b></td>
+  </tr>
+</table>
 
 **Undergraduate Students:**
 <table>
