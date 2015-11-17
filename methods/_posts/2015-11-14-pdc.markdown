@@ -15,10 +15,10 @@ The problem of model selection is inevitable in an increasingly large number of 
 # Papers
 
 * Guerrier, S. and Victoria-Feser, M.-P., “A Prediction Divergence Criterion for Model
-Selection". (This paper will be uploaded soon)
+Selection". (Submitted manuscript) [arXiv](http://arxiv.org/abs/1511.04485)
 
 # Talks
 
-* A Prediction Divergence Criterion for Model Selection was presented in the following statistical seminars: University of California, Santa Barbara (2014), University of Geneva (2014), Stanford University (2014) & University of Illinois at Urbana-Champaign (2015). (Slides will be uploaded soon)
+* A Prediction Divergence Criterion for Model Selection was presented in the following statistical seminars: University of California, Santa Barbara (2014), University of Geneva (2014), Stanford University (2014) & University of Illinois at Urbana-Champaign (2015). [Slides](/assets/pdfs/PDC.pdf)
 
 
