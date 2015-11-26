@@ -62,6 +62,20 @@ The current members of the SMAC Group are listed below by title.
     Roberto Molinari obtained a Bachelor and Master degree respectively in Political Sciences and International Affairs at the LUISS Guido Carli University in Rome. After experiences in the UNECE, OECD and Ernst &amp; Young, he enrolled for an M.Sc. in Statistics at the University of Geneva. Having completed the master degree he then enrolled in a PhD in Statistics in the same university during which he was Visiting Scholar at the University of Illinois Urbana-Champaign. His research interests are in robust time series model estimation, spatial statistics and model selection as well as applied statistics in the field of economics, finance and medicine.</td>
   </tr>
   <tr>
+    </tr>
+  <tr>
+    <td><img src="{{ "assets/images/staff/rmolinari.jpg" | prepend: site.baseurl }}" alt="Roberto Molinari" class="staff-picture" />  
+          <ul class="staff-details">
+            <li>
+                <i class="fa fa-envelope-o"></i>
+                <span class="username">samuel.orso (AT) unige (dot) ch</span>
+            </li>
+        </ul>
+</td>
+    <td><b>Samuel Orso</b> <br /><br />
+  </td>
+  </tr>
+  <tr>
     <td><img src="{{ "assets/images/staff/hxu.jpg" | prepend: site.baseurl }}" alt="Haotian Xu" class="staff-picture" />
     
               <ul class="staff-details">
@@ -71,6 +85,8 @@ The current members of the SMAC Group are listed below by title.
             </li>
         </ul>
     </td>
+        
+
     <td><b>Haotian Xu</b><br /><br />
     Haotian Xu is a graduate student in the Research Center for Statistics at the University of Geneva studying towards a Ph.D degree under the supervision of Prof. Maria-Pia Victoria-Feser and Prof. Stéphane Guerrier. Before pursuing Ph.D, he earned a M.Sc. degree in Statistics at University of Illinois Urbana-Champaign. His research interests lies in the wavelet methods and estimation for state-space models.</td>
   </tr>
