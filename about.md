@@ -64,7 +64,7 @@ The current members of the SMAC Group are listed below by title.
   <tr>
     </tr>
   <tr>
-    <td><img src="{{ "assets/images/staff/rmolinari.jpg" | prepend: site.baseurl }}" alt="Roberto Molinari" class="staff-picture" />  
+    <td><img src="{{ "assets/images/staff/sorso.jpg" | prepend: site.baseurl }}" alt="Roberto Molinari" class="staff-picture" />  
           <ul class="staff-details">
             <li>
                 <i class="fa fa-envelope-o"></i>
