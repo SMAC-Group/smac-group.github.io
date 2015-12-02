@@ -208,7 +208,7 @@ pre code.hljs {
        div.box {
          height: 8em;
          // margin-top: 2em;
-         @include span-columns(3);
+         @include span-columns(2);
          @include omega(3n);
        }
     }
