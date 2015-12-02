@@ -46,6 +46,19 @@ layout: default
   {% endfor %}
 </ul>
 
+<section class="mgrid">
+    <div class="box">
+		<a href="{{ 'methods' | remove_first: '/' | prepend: site.baseurl }}">Methods</a>
+  </div>
+    <div class="box">
+		<a href="{{ 'applications' | remove_first: '/' | prepend: site.baseurl }}">Applications</a>
+  </div>
+    <div class="box">
+		<a href="{{ 'computing' | remove_first: '/' | prepend: site.baseurl }}">Computing</a>
+  </div>
+</section>
+
+
 <nav class="pagination" role="navigation">
 	<p>
     {% if paginator.next_page %}
@@ -59,29 +72,6 @@ layout: default
     <span class="fa-stack fa-lg">
 			<i class="fa fa-square fa-stack-2x"></i>
 			<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-		</span>
-    {% endif %}
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-      <a class="newer-posts" href="{{ site.baseurl }}">
-		    <span class="fa-stack fa-lg">
-				  <i class="fa fa-square fa-stack-2x"></i>
-				  <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-				</span>
-			</a>
-      {% else %}
-      <a class="newer-posts" href="{{ site.baseurl }}page{{paginator.previous_page}}">
-		    <span class="fa-stack fa-lg">
-				  <i class="fa fa-square fa-stack-2x"></i>
-				  <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-				</span>
-			</a>
-      {% endif %}
-    {% else %}
-    <span class="fa-stack fa-lg">
-		  <i class="fa fa-square fa-stack-2x"></i>
-		  <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
 		</span>
     {% endif %}
   </p>

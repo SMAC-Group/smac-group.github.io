@@ -202,6 +202,17 @@ pre code.hljs {
 		@include outer-container;
 		padding: 1em;
 	}
+    
+    .mgrid {
+       div.box {
+         font-size: 0.78em;
+         height: 8em;
+         // margin-top: 2em;
+         @include span-columns(3);
+         @include omega(4n);
+       }
+    }
+
 	/*
 	*	index.html
 	*/
