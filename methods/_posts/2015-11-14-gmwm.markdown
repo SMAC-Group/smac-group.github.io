@@ -8,7 +8,7 @@ tags:
 - Wavelet variance
 - Time Series
 mathjax: true
-spic: "assets/images/site/cities/laxaux_reduced.jpg"
+spic: assets/images/site/cities/laxaux_reduced.jpg
 abstract: "General method for the estimation of many time series models"
 ---
 
