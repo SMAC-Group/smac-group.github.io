@@ -204,11 +204,11 @@ pre code.hljs {
 	}
     
     .mgrid {
+       padding-top: 1em !important;
        div.box {
-         font-size: 0.78em;
          height: 8em;
          // margin-top: 2em;
-         @include span-columns(3);
+         @include span-columns(6);
          @include omega(4n);
        }
     }
