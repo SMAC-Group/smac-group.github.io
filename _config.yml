@@ -24,3 +24,12 @@ paginate_path: "/page:num/"
 kramdown:
   input: GFM
   syntax_highlighter: rouge 
+  
+
+social:
+    name: GitHub
+    icon: github
+    username: SMAC-Group
+    url: https://github.com/SMAC-Group
+    desc: Fork Our Projects on GitHub
+    share: false
