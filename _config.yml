@@ -30,7 +30,7 @@ social:
     icon: envelope-o
     username: contact@smac-group.com
     url: mailto:contact@smac-group.com
-    desc: E-Mail Us!
+    desc: E-Mail Us
     share: false
 	
   - name: GitHub
