@@ -212,7 +212,7 @@ pre code.hljs {
          @include omega();
        }
        .pbox {
-         @include span-columns(2);
+         @include span-columns(3);
          .nv{
             border-radius: 3px;
             border: 1px solid $white;           
