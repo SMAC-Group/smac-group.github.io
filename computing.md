@@ -4,4 +4,36 @@ title: Computing
 permalink: /computing/
 ---
 
-A key part of the SMAC-Group relates to the area of computing. Within this page, we describe various computing implementions of methods developed.
+<div class="wrapper">
+
+{% if site.categories.computing == null %}
+
+<p>We're working on providing content that details the computing methods.</p>
+
+<p>Please check back later...</p>
+{% else %}
+<section class="sgrid">
+	{% for post in site.categories['computing'] %}
+	<div class="pbox">
+		{% if post.spic %} 
+			<img src="{{ post.spic | prepend: site.baseurl }}" alt="{{ post.title }}" class="nv" />
+		{% else %}
+			<img src="{{ 'assets/images/site/cities/earth_default_reduced.jpg' | prepend: site.baseurl }}" alt="{{ post.title }}" class="nv"/>
+		{% endif %}
+	</div>
+	<div class="sbox">
+		<strong>
+			<a href="{{ post.url | remove_first: '/' | prepend: site.baseurl }}">{{ post.title }}</a>
+		</strong>
+		<span class="post-date">{{ post.date | date_to_long_string }}</span>
+		<p class="post-abstract">{{ post.abstract }} </p>
+		<a href="{{ post.url | remove_first: '/' | prepend: site.baseurl }}">Read More &raquo;</a>
+	</div>
+	{% endfor %}
+
+</section>
+
+{% endif %}
+
+
+</div>

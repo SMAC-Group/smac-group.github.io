@@ -5,6 +5,12 @@ permalink: /applications/
 ---
 
 <div class="wrapper">
+
+{% if site.categories.applications == null %}
+
+We're working on providing application cases.
+
+{% else %}
 <section class="sgrid">
 	{% for post in site.categories['applications'] %}
 	<div class="pbox">
@@ -25,4 +31,8 @@ permalink: /applications/
 	{% endfor %}
 
 </section>
+
+{% endif %}
+
+
 </div>
