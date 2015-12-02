@@ -1,7 +1,7 @@
 ---
 layout: page
-title: People
-permalink: /people/
+title: Staff
+permalink: /staff/
 ---
 
 The current members of the SMAC Group are listed below by title.
