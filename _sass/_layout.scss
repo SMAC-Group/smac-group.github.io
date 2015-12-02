@@ -212,6 +212,10 @@ pre code.hljs {
          @include span-columns(4);
          @include omega(3n);
        }
+       .nv{
+         border-radius:5px;
+         border: 2px solid darken($link-color, 10%);
+       }
     }
 
 	/*
