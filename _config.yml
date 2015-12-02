@@ -24,10 +24,16 @@ paginate_path: "/page:num/"
 kramdown:
   input: GFM
   syntax_highlighter: rouge 
-  
 
 social:
-    name: GitHub
+  - name: Contact
+    icon: envelope-o
+    username: contact@smac-group.com
+    url: mailto:contact@smac-group.com
+    desc: E-Mail Us!
+    share: false
+	
+  - name: GitHub
     icon: github
     username: SMAC-Group
     url: https://github.com/SMAC-Group
