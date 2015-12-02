@@ -10,11 +10,15 @@
     </a>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
-      	{% for page in site.pages %}
+      	<!--{% for page in site.pages %}
           {% if page.title and page.main_nav != false %}
           <li class="nav-link"><a href="{{ page.url | remove_first: '/' | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
-        {% endfor %}
+        {% endfor %}-->
+		  <li class="nav-link"><a href="{{ 'people' | remove_first: '/' | prepend: site.baseurl }}">People</a>
+          <li class="nav-link"><a href="{{ 'methods' | remove_first: '/' | prepend: site.baseurl }}">Methods</a>
+          <li class="nav-link"><a href="{{ 'applications' | remove_first: '/' | prepend: site.baseurl }}">Applications</a>
+          <li class="nav-link"><a href="{{ 'computing' | remove_first: '/' | prepend: site.baseurl }}">Computing</a>
       </ul>
     </nav>
   </div>
