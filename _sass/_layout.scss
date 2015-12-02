@@ -207,7 +207,7 @@ pre code.hljs {
        padding-top: 1em !important;
        
        .box {
-         height: 8em;
+         min-height: 8em;
          // margin-top: 2em;
          @include span-columns(4);
          @include omega(3n);
