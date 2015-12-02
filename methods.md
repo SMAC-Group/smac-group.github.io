@@ -12,7 +12,7 @@ permalink: /methods/
 			<strong>
 				<a href="{{ post.url | remove_first: '/' | prepend: site.baseurl }}">{{ post.title }}</a>
 			</strong>
-			{% if page.spic %} 
+			{% if page.spic != null %} 
 			<img src="{{ post.spic | prepend: site.baseurl }}" alt="{{ post.title }}" class="nv" />
 			{% else %}
 			<img src="{{ 'assets/images/site/cities/earth_default_reduced.jpg' | prepend: site.baseurl }}" alt="{{ post.title }}" class="nv"/>
