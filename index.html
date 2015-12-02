@@ -39,7 +39,7 @@ layout: default
 
 <div class="wrapper">
 <ul class="post-list">
-  {% for post in site.categories['News'] %}
+  {% for post in site.categories.News %}
   <li>
     <h2>
       <a class="post-link" href="{{ post.url | remove_first: '/' | prepend: site.baseurl }}">{{ post.title }}</a>
