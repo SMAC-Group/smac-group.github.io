@@ -202,7 +202,25 @@ pre code.hljs {
 		@include outer-container;
 		padding: 1em;
 	}
-    
+    .sgrid{
+        padding-top: 1em !important;
+       .sbox {
+         min-height: 10em;
+         min-height: 10em;
+         // margin-top: 2em;
+         @include span-columns(4);
+         @include omega();
+       }
+       .pbox {
+         @include span-columns(2);
+         .nv{
+            border-radius: 3px;
+            border: 1px solid $white;           
+            box-shadow: 0 0 0 2px $light-gray;           
+            margin: 0 0 7px;
+         }
+       }
+    }
     .mgrid {
        padding-top: 1em !important;
        .box {
