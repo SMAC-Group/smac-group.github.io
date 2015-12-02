@@ -213,9 +213,11 @@ pre code.hljs {
        }
        .nv {
          border-radius: 3px;
-         border-color: $light-gray;
-         border: 2px solid;
-         margin: 0 0 5px;
+         border-color: $white;
+         border: 1px solid;
+           
+         box-shadow: 0 0 0 2px $light-gray;           
+         margin: 0 0 7px;
        }
     }
 
