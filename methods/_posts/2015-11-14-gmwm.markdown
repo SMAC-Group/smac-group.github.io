@@ -8,6 +8,8 @@ tags:
 - Wavelet variance
 - Time Series
 mathjax: true
+spic: "assets/images/site/cities/laxaux_reduced.jpg"
+abstract: "General method for the estimation of many time series models"
 ---
 
 The GMWM is a very general method for the estimation of many time series models and is particularly advantageous for the estimation of latent time series or State-Space Models (SSM). *Stebler et al. (2011)* showed that for these models the traditional Maximum Likelihood (ML) and other related estimators often lead to unreliable results even in moderately complex settings. On the other hand, GMWM-based estimators can easily overcome these difficulties and can also surprisingly outperform the ML for more traditional models such as ARMA models (see e.g. Guerrier et al., 2015). Using a quantity called Wavelet Variance (WV), the idea behind the GMWM can be extended to a wide range of dependent data settings going from the modeling of latent time series and SSM to non-stationary and spatio-temporal models.
