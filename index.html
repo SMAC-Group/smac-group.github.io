@@ -31,9 +31,15 @@ layout: default
 </section>
 </div>
 
+<span class="page-divider">
+  <span class="one"></span>
+  <span class="two"></span>
+</span>
+
+
 <div class="wrapper">
 <ul class="post-list">
-  {% for post in paginator.posts %}
+  {% for post in site.categories['News'] %}
   <li>
     <h2>
       <a class="post-link" href="{{ post.url | remove_first: '/' | prepend: site.baseurl }}">{{ post.title }}</a>
