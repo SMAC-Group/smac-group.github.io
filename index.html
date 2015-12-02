@@ -50,7 +50,7 @@ layout: default
 <div class="wrapper">
 <h2>Recent News</h2>
 <ul class="post-list">
-  {% for post in site.categories.news %}
+  {% for post in paginator.posts %}
   <li>
     <h3>
       <a class="post-link" href="{{ post.url | remove_first: '/' | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -76,6 +76,52 @@ layout: default
   {% endif %}
   {% endfor %}
 </ul>
+    
+    
+    
+<nav class="pagination" role="navigation">
+  <p>
+    {% if paginator.next_page %}
+    <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-square fa-stack-2x"></i>
+        <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+    {% else %}
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
+    </span>
+    {% endif %}
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+      <a class="newer-posts" href="{% if site.baseurl %}{{ site.baseurl }}{% else %}/{% endif %}">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+      {% else %}
+      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+      {% endif %}
+    {% else %}
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-square fa-stack-2x"></i>
+      <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
+    </span>
+    {% endif %}
+  </p>
+  <p>
+    <a href="{{ site.baseurl }}/posts">View All Posts by Category</a>
+  </p>
+</nav>
 </div>
 
 </div>
