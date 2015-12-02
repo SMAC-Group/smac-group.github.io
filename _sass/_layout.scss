@@ -209,7 +209,7 @@ pre code.hljs {
          height: 8em;
          // margin-top: 2em;
          @include span-columns(6);
-         @include omega(4n);
+         @include omega(3n);
        }
     }
 
