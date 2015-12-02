@@ -43,7 +43,8 @@
 
     <div class="site-signature">
     	<p class="rss-subscribe text"><strong>Subscribe <a href="{{ "feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
-      <p class="text"> &copy; {{ site.time | date: '%Y' }} {{ site.title }} <br />{{ site.description }}</p>
+      <p class="text"> {{ site.description }} <br /> 
+	  &copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
     </div>
 
   </div>
