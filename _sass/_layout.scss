@@ -205,12 +205,19 @@ pre code.hljs {
     
     .mgrid {
        padding-top: 1em !important;
-       text-align: center;
-       div.box {
+       
+       .box {
          height: 8em;
          // margin-top: 2em;
          @include span-columns(4);
          @include omega(3n);
+       }
+       .image{
+         position:relative;
+         width:100%
+         h2 {
+            position: absolute:
+         }
        }
     }
 
