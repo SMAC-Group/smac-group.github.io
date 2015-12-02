@@ -212,10 +212,10 @@ pre code.hljs {
          @include omega(3n);
        }
        .nv {
-         border-radius: 5px;
-         border-color: darken($blue, 10%);
+         border-radius: 3px;
+         border-color: $light-grey;
          border: 2px solid;
-         margin: none;
+         margin: 0 0 5px;
        }
     }
 
