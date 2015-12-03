@@ -7,6 +7,7 @@ tags:
 - Stepwise regression
 - Large and sparse datasets
 mathjax: true
+spic: "assets/images/site/cities/rome_reduced.jpg"
 ---
 
 
