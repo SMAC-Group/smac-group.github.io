@@ -18,16 +18,21 @@ layout: default
 {% include graphical_head.html %}
 
 <div class="wrapper">
+
+<section class="intro">
+    Welcome to the SMAC Group! We are actively working on new advancements within statistical methodology, real-world applications, and computing technologies. To learn more about the various projects we are working on, click on a category below!
+</section>
+
 <section class="mgrid">
     <div class="box">
-		<a href="{{ 'methods' | prepend: site.baseurl }}">Methods</a>
+		<h3><a href="{{ 'methods' | prepend: site.baseurl }}">Methods</a></h3>
 		<image src="{{ 'assets/images/site/cities/geneve_reduced.jpg' | prepend: site.baseurl }}" alt="Methods" class="nv"/>
 		<p>Developments of new statistical methods.</p>
 		<a href="{{ 'methods' | prepend: site.baseurl }}">Read more &raquo;</a>
 
   </div>
     <div class="box">
-		<a href="{{ 'applications' | prepend: site.baseurl }}">Applications</a>
+        <h2><a href="{{ 'applications' | prepend: site.baseurl }}">Applications</a></h2>
 		<image src="{{ 'assets/images/site/cities/bruxelles_reduced.jpg' | prepend: site.baseurl }}" alt="Applications" class="nv"/>
 		<p>Applications of theory to real-world problems.</p>
 		<a href="{{ 'applications' | prepend: site.baseurl }}">Read more &raquo;</a>
@@ -48,7 +53,7 @@ layout: default
 
 
 <div class="wrapper">
-<h2>Recent News</h2>
+<h2>Recent Announcements</h2>
 <ul class="post-list">
   {% for post in paginator.posts %}
   <li>
