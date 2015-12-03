@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: landing
 title:  "Modelling Inertial Sensors"
 date:   2015-11-14 21:20:52
 tags: 
@@ -7,6 +7,8 @@ tags:
 - IMU
 - GMWM
 - Navigation
+spic: "assets/images/site/cities/rome_reduced.jpg"
+abstract: "GMWM-based IMU calibration"
 ---
 
 # Intro
