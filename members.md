@@ -29,6 +29,23 @@ The current members of the SMAC Group are listed below by title.
   </tr>
 </table>
 
+
+**Researcher:**
+<table>
+  <tr>
+    <td><img src="{{ "assets/images/staff/nmili.jpg" | prepend: site.baseurl }}" alt="Nabil Mili" class="staff-picture"/>
+	    <ul class="staff-details">
+            <li>
+                <i class="fa fa-envelope-o"></i>
+                <span class="username">Nabil.Mili (AT) unige (dot) ch</span>
+            </li>
+        </ul>
+	</td>
+    <td><b>Nabil Mili</b><br /><br /> 
+    </td>
+  </tr>
+</table>
+
 **PhD Students:**
  
 <table>
@@ -129,20 +146,5 @@ The current members of the SMAC Group are listed below by title.
 </table>
 
 
-**Biostatisticians:**
-<table>
-  <tr>
-    <td><img src="{{ "assets/images/staff/nmili.jpg" | prepend: site.baseurl }}" alt="Nabil Mili" class="staff-picture"/>
-	    <ul class="staff-details">
-            <li>
-                <i class="fa fa-envelope-o"></i>
-                <span class="username">Nabil.Mili (AT) unige (dot) ch</span>
-            </li>
-        </ul>
-	</td>
-    <td><b>Nabil Mili</b><br /><br /> 
-    </td>
-  </tr>
-</table>
 
 <!-- **Alumi:** -->
