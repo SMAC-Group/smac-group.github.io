@@ -64,7 +64,7 @@ The current members of the SMAC Group are listed below by title.
   <tr>
     </tr>
   <tr>
-    <td><img src="{{ "assets/images/staff/sorso.jpg" | prepend: site.baseurl }}" alt="Roberto Molinari" class="staff-picture" />  
+    <td><img src="{{ "assets/images/staff/sorso.jpg" | prepend: site.baseurl }}" alt="Samuel Orso" class="staff-picture" />  
           <ul class="staff-details">
             <li>
                 <i class="fa fa-envelope-o"></i>
@@ -124,6 +124,23 @@ The current members of the SMAC Group are listed below by title.
 	</td>
     <td><b>Wenchao Yang</b><br /><br /> 
 	Wenchao Yang is in his senior year of undergraduate studies working toward a Bachelor of Science in Statistics with Minor in Computer Science. His interests lie in the convergence of Statistics with Computer Science. Outside of SMAC, he holds a teaching fellowship position at the Margolis Market Information Lab within the College of Business. In his free time he enjoys learning new theories, algorithms and applying them to solve real life problems.
+    </td>
+  </tr>
+</table>
+
+
+**Biostatisticians:**
+<table>
+  <tr>
+    <td><img src="{{ "assets/images/staff/nmili.jpg" | prepend: site.baseurl }}" alt="Nabil Mili" class="staff-picture"/>
+	    <ul class="staff-details">
+            <li>
+                <i class="fa fa-envelope-o"></i>
+                <span class="username">Nabil.Mili (AT) unige (dot) ch</span>
+            </li>
+        </ul>
+	</td>
+    <td><b>Nabil Mili</b><br /><br /> 
     </td>
   </tr>
 </table>
