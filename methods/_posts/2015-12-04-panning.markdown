@@ -21,6 +21,6 @@ spic: "assets/images/site/cities/shanghai_reduced.jpg"
 
 # Software
 
-* (Details will be uploaded soon)
+* A R package is available on [GitHub](https://github.com/SMAC-Group/panning)
 
 
