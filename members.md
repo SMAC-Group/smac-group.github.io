@@ -33,7 +33,7 @@ The current members of the SMAC Group are listed below by title.
 **Researchers:**
 <table>
   <tr>
-    <td><img src="{{ "assets/images/staff/nmili.pdf" | prepend: site.baseurl }}" alt="Nabil Mili" class="staff-picture"/>
+    <td><img src="{{ "assets/images/staff/nmili.jpg" | prepend: site.baseurl }}" alt="Nabil Mili" class="staff-picture"/>
 	    <ul class="staff-details">
             <li>
                 <i class="fa fa-envelope-o"></i>
