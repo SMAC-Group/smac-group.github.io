@@ -73,6 +73,7 @@ The current members of the SMAC Group are listed below by title.
         </ul>
 </td>
     <td><b>Samuel Orso</b> <br /><br />
+    Samuel Orso is a PhD student in statistics at the University of Geneva. He obtained a BSc in management and a MSc in statistics from the same university. His research interests are in copula model, robust estimation and model selection.
   </td>
   </tr>
   <tr>
