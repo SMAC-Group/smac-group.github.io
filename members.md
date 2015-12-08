@@ -64,7 +64,9 @@ The current members of the SMAC Group are listed below by title.
             </li>
         </ul>
    </td>
-    <td><b>James Balamuta</b></td>
+    <td><b>James Balamuta</b> <br/> <br/> 
+    James Balamuta is a PhD Student in Statistics at the University of Illinois at Urbana-Champaign. He holds a Master degree in Statistics as well as a Bachelors of Science in Mathematics, Bachelors of Science in Statistics, and a minor in Secondary Education from the University of Illinois at Urbana-Champaign. He has worked on different statistical projects at State Farm's Research and Development Center, Pearson, Gardner Denver, and on commission. In addition, he has implemented several courses and autograding technologies within the statistics department. His research interests lie in computational statistics, large scale data problems, spatial fields, state-space models, and psychometrics.
+    </td>
   </tr>
   <tr>
     <td><img src="{{ "assets/images/staff/rmolinari.jpg" | prepend: site.baseurl }}" alt="Roberto Molinari" class="staff-picture" />  
