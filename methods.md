@@ -10,10 +10,10 @@ permalink: /methods/
 	{% for post in site.categories['methods'] %}
 		<div class="box">
 			<strong>
-				<a href="{{ post.url  | prepend: site.url }}">{{ post.title }}</a>
+				<a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
 			</strong>
 			{% if post.spic %} 
-			<img src="/{{ post.spic | prepend: site.url }}" alt="{{ post.title }}" class="nv" />
+			<img src="{{ post.spic | prepend: '/' | prepend: site.url }}" alt="{{ post.title }}" class="nv" />
 			{% else %}
 			<img src="{{ '/assets/images/site/cities/earth_default_reduced.jpg' | prepend: site.url }}" alt="{{ post.title }}" class="nv"/>
 			{% endif %}
