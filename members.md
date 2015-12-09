@@ -11,7 +11,7 @@ The current members of the SMAC Group are listed below by title.
 
 <table>
   <tr>
-  <td><img src="{{ "assets/images/staff/sguerrier.jpg" | prepend: site.baseurl }}" alt="Stéphane Guerrier" class="staff-picture" />
+  <td><img src="{{ "/assets/images/staff/sguerrier.jpg" | prepend: site.url }}" alt="Stéphane Guerrier" class="staff-picture" />
 
  <ul class="staff-details">
       	<li>
@@ -33,7 +33,7 @@ The current members of the SMAC Group are listed below by title.
 **Researchers:**
 <table>
   <tr>
-    <td><img src="{{ "assets/images/staff/nmili.jpg" | prepend: site.baseurl }}" alt="Nabil Mili" class="staff-picture"/>
+    <td><img src="{{ "/assets/images/staff/nmili.jpg" | prepend: site.url }}" alt="Nabil Mili" class="staff-picture"/>
 	    <ul class="staff-details">
             <li>
                 <i class="fa fa-envelope-o"></i>
@@ -50,7 +50,7 @@ The current members of the SMAC Group are listed below by title.
  
 <table>
   <tr>
-    <td><img src="{{ "assets/images/staff/jjbalamuta.jpg" | prepend: site.baseurl }}" alt="James Balamuta" class="staff-picture" />
+    <td><img src="{{ "/assets/images/staff/jjbalamuta.jpg" | prepend: site.url }}" alt="James Balamuta" class="staff-picture" />
       <br />
       
         <ul class="staff-details">
@@ -69,7 +69,7 @@ The current members of the SMAC Group are listed below by title.
     </td>
   </tr>
   <tr>
-    <td><img src="{{ "assets/images/staff/rmolinari.jpg" | prepend: site.baseurl }}" alt="Roberto Molinari" class="staff-picture" />  
+    <td><img src="{{ "/assets/images/staff/rmolinari.jpg" | prepend: site.url }}" alt="Roberto Molinari" class="staff-picture" />  
           <ul class="staff-details">
             <li>
                 <i class="fa fa-envelope-o"></i>
@@ -83,7 +83,7 @@ The current members of the SMAC Group are listed below by title.
   <tr>
     </tr>
   <tr>
-    <td><img src="{{ "assets/images/staff/sorso.jpg" | prepend: site.baseurl }}" alt="Samuel Orso" class="staff-picture" />  
+    <td><img src="{{ "/assets/images/staff/sorso.jpg" | prepend: site.url }}" alt="Samuel Orso" class="staff-picture" />  
           <ul class="staff-details">
             <li>
                 <i class="fa fa-envelope-o"></i>
@@ -96,7 +96,7 @@ The current members of the SMAC Group are listed below by title.
   </td>
   </tr>
   <tr>
-    <td><img src="{{ "assets/images/staff/hxu.jpg" | prepend: site.baseurl }}" alt="Haotian Xu" class="staff-picture" />
+    <td><img src="{{ "/assets/images/staff/hxu.jpg" | prepend: site.url }}" alt="Haotian Xu" class="staff-picture" />
     
               <ul class="staff-details">
             <li>
@@ -116,7 +116,7 @@ The current members of the SMAC Group are listed below by title.
 
 <table>
     <tr>
-    <td><img src="{{ "assets/images/staff/gbakalli.jpg" | prepend: site.baseurl }}" alt="Gaetan Bakalli" class="staff-picture" />
+    <td><img src="{{ "/assets/images/staff/gbakalli.jpg" | prepend: site.url }}" alt="Gaetan Bakalli" class="staff-picture" />
       <br />
       
         <ul class="staff-details">
@@ -133,7 +133,7 @@ The current members of the SMAC Group are listed below by title.
 **Undergraduate Students:**
 <table>
   <tr>
-    <td><img src="{{ "assets/images/staff/wyang.jpg" | prepend: site.baseurl }}" alt="Wenchao Yang" class="staff-picture"/>
+    <td><img src="{{ "/assets/images/staff/wyang.jpg" | prepend: site.url }}" alt="Wenchao Yang" class="staff-picture"/>
 	    <ul class="staff-details">
             <li>
                 <i class="fa fa-envelope-o"></i>
