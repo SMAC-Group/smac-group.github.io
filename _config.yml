@@ -12,7 +12,9 @@ github_username: smac-group
 
 cover: "assets/images/site/goat-c.png"
 #logo: "assets/logo.png"
-
+# Site map plugin
+gems:
+  - jekyll-sitemap
 
 # Build settings
 permalink: "/:categories/:title"
