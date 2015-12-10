@@ -43,6 +43,7 @@ The current members of the SMAC Group are listed below by title.
 	</td>
     <td><b>Nabil Mili</b><br /><br /> 
     </td>
+    Nabil Mili holds a Doctorate in Medicine and a M. Sc. in Statistics from the University of Geneva. He is board certified in Anesthesiology (Switzerland). His domains of interest are model selection in high dimensional data and the connection between statistical formalization and medical reasoning. 
   </tr>
 </table>
 
