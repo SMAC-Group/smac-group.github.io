@@ -146,6 +146,20 @@ The current members of the SMAC Group are listed below by title.
 	Wenchao Yang is in his senior year of undergraduate studies working toward a Bachelor of Science in Statistics with Minor in Computer Science. His interests lie in the convergence of Statistics with Computer Science. Outside of SMAC, he holds a teaching fellowship position at the Margolis Market Information Lab within the College of Business. In his free time he enjoys learning new theories, algorithms and applying them to solve real life problems.
     </td>
   </tr>
+  <tr>
+    <td><img src="{{ "/assets/images/staff/yzhang.jpg" | prepend: site.url }}" alt="Yuming Zhang" class="staff-picture"/>
+	    <ul class="staff-details">
+            <li>
+                <i class="fa fa-envelope-o"></i>
+                <span class="username">yzhan216 (AT) illinois (dot) EDU</span>
+            </li>
+        </ul>
+	</td>
+    <td><b>Yuming Zhang</b><br /><br /> 
+Yuming Zhang is a junior pursuing a double major in Mathematics and Statistics at the University of Illinois at Urbana-Champaign. She has held a position as a Teaching Assistant in the Department of Mathematics and has interned in GF Securities and China Construction Bank where she performed various financial analyses. She enjoys absorbing new knowledge and finding out ways to apply the knowledge to the everyday situations. 
+</td>
+  </tr>
+  
 </table>
 
 
