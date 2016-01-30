@@ -61,7 +61,7 @@ The current members of the SMAC Group are listed below by title.
             </li>
             <li>
                 <i class="fa fa-home"></i>
-                <span><a href="http://thecoatlessprofessor.com">thecoatlessprofessor.com</a></span>
+                <span><a href="https://www.youtube.com/watch?v=HPPj6viIBmU">thecoatlessprofessor.com</a></span>
             </li>
         </ul>
    </td>
