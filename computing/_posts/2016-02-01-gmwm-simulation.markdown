@@ -49,11 +49,11 @@ Given this formulation, there needs to be a slight transformation so that the [g
 Converting to equations preloaded into the framework yields:
 
 AR1: \[\begin{align*}
-  \phi  &= \exp \left( { - \frac{1}{{{\tau _b}}}\Delta t} \right)  = \exp \left( { - \frac{1}{{{537}}}0.0025} \right)  = 0.9999953\\
-  \sigma _{AR}^2 &=  - \frac{{\sigma _b^2{\tau _b}}}{2}\left[ {\exp \left( { - \frac{{2\Delta t}}{{{\tau _b}}}} \right) - 1} \right] =  - \frac{{1.2\times 10^{-6}*{537}}}{2}\left[ {\exp \left( { - \frac{{2* 0.0025}}{{{537}}}} \right) - 1} \right] =  3.5999832\times 10^{-15}\\
+  \phi  &= \exp \left( { - \frac{1}{ { {\tau _b} } }\Delta t} \right)  = \exp \left( { - \frac{1}{ { {537} } }0.0025} \right)  = 0.9999953\\
+  \sigma _{AR}^2 &=  - \frac{ {\sigma _b^2{\tau _b} } }{2}\left[ {\exp \left( { - \frac{ {2\Delta t} }{ { {\tau _b} } } } \right) - 1} \right] =  - \frac{ {1.2\times 10^{-6}*{537} } }{2}\left[ {\exp \left( { - \frac{ {2* 0.0025} }{ { {537} } } } \right) - 1} \right] =  3.5999832\times 10^{-15}\\
 \end{align*}\]
 
-WN: \[\sigma _{WN}^2 = \frac{1}{{\Delta t}}\sigma _w^2 = \frac{1}{{0.0025}} 1.24\times 10^{-4} = 6.1504\times 10^{-6} \]
+WN: \[\sigma _{WN}^2 = \frac{1}{ {\Delta t} }\sigma _w^2 = \frac{1}{ {0.0025} } 1.24\times 10^{-4} = 6.1504\times 10^{-6} \]
 
 Hence, to generate the models one should use:
 
@@ -69,15 +69,15 @@ Converting from an AR1:
 \(\phi\):
 
 \[\begin{align*}
-  \phi  &= \exp \left( { - \frac{1}{{{\tau _b}}}\Delta t} \right) \\
-  {\tau _b}  &=  - \frac{{\Delta t}}{{\ln \left( \phi  \right)}}\\ 
+  \phi  &= \exp \left( { - \frac{1}{ { {\tau _b} } }\Delta t} \right) \\
+  {\tau _b}  &=  - \frac{ {\Delta t} }{ {\ln \left( \phi  \right)} }\\ 
 \end{align*} \]
 
 \(\sigma_{AR}^2\):
 
 \[\begin{align*}
-  \sigma _{AR}^2 =  - \frac{{\sigma _b^2{\tau _b}}}{2}\left[ {\exp \left( { - \frac{{2\Delta t}}{{{\tau _b}}}} \right) - 1} \right] \\
-  \sigma _b^2  =  - \frac{{2\sigma _{AR}^2}}{{{\tau _b}\left[ {\exp \left( { - \frac{{2\Delta t}}{{{\tau _b}}}} \right) - 1} \right]}}
+  \sigma _{AR}^2 =  - \frac{ {\sigma _b^2{\tau _b} } }{2}\left[ {\exp \left( { - \frac{ {2\Delta t} }{ { {\tau _b} } } } \right) - 1} \right] \\
+  \sigma _b^2  =  - \frac{ {2\sigma _{AR}^2} }{ { {\tau _b}\left[ {\exp \left( { - \frac{ {2\Delta t} }{ { {\tau _b} } } } \right) - 1} \right]} }
 \end{align*} \]
 
 Converting from WN:
@@ -85,7 +85,7 @@ Converting from WN:
 \(\sigma_{WN}^2\):
 
 \[\begin{align*}
-  \frac{1}{{\Delta t}}\sigma _w^2 &= \sigma _{WN}^2 \\
+  \frac{1}{ {\Delta t} }\sigma _w^2 &= \sigma _{WN}^2 \\
   {\sigma ^2} &= \Delta t\sigma _{WN}^2 \\ 
 \end{align*} \]
 
