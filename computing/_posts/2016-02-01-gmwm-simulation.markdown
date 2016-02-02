@@ -23,9 +23,9 @@ On page 172 of Section V-C, the authors of the paper provide a very brief descri
 
 That is, we assume the authors are using:
 
--   $\tau _b = 537$ $$$x$-gyro$$
--   $\sigma _b = 1.2\times 10^{-6}$ $$$z$-gyro$$
--   $\sigma _{w} = 1.24\times 10^{-4}$ $$$x$-gyro$$
+-   $\tau _b = 537$ from $x$-gyro
+-   $\sigma _b = 1.2\times 10^{-6}$ from $z$-gyro
+-   $\sigma _{w} = 1.24\times 10^{-4}$ from $x$-gyro
 
 Note: The $\sigma$ values listed are the standard deviations and not the variances. Also, the value for $\sigma _{w}$ is not accurate as the simulation lists a value closer to $1.08 \times 10^{-4}$, which would indicate that it is from the MPU6500 $y$-gyroscope instead of the BMX0555.
 
@@ -37,10 +37,10 @@ Converting a discrete-time model to a GMWM suitable modeling term
 On page 167, the authors then go on to define a discrete-time equivalent of the bias process (1b) as:
 
 $$\begin{align*}
-            X_t &= \exp\left(- \frac{1}{\tau_b} \Delta t \right) X_{t-1} + w_t, \$$0.2cm]
-            & w_t \sim \mathcal{N}(0, \sigma_{b}^2)\$$0.2cm]
-            & \sigma_{b}^2 = - \frac{\sigma_w^2 \tau_b}{2} \left(\exp\left(- \frac{2 \Delta t}{\tau_b}\right) - 1\right)\$$0.2cm]
-            Y_t &\sim \mathcal{N} (0,\frac{\sigma_w^2}{\Delta t})\$$0.2cm]
+            X_t &= \exp\left(- \frac{1}{\tau_b} \Delta t \right) X_{t-1} + w_t, \\
+            & w_t \sim \mathcal{N}(0, \sigma_{b}^2)\\
+            & \sigma_{b}^2 = - \frac{\sigma_w^2 \tau_b}{2} \left(\exp\left(- \frac{2 \Delta t}{\tau_b}\right) - 1\right)\\
+            Y_t &\sim \mathcal{N} (0,\frac{\sigma_w^2}{\Delta t})\\
             Z_t &= X_t + Y_t
 \end{align*}$$
 
@@ -53,7 +53,9 @@ AR1: $$\begin{align*}
   \sigma _{AR}^2 &=  - \frac{ {\sigma _b^2{\tau _b} } }{2}\left[ {\exp \left( { - \frac{ {2\Delta t} }{ { {\tau _b} } } } \right) - 1} \right] =  - \frac{ {1.2\times 10^{-6}*{537} } }{2}\left[ {\exp \left( { - \frac{ {2* 0.0025} }{ { {537} } } } \right) - 1} \right] =  3.5999832\times 10^{-15}\\
 \end{align*}$$
 
-WN: $$\sigma _{WN}^2 = \frac{1}{ {\Delta t} }\sigma _w^2 = \frac{1}{ {0.0025} } 1.24\times 10^{-4} = 6.1504\times 10^{-6} $$
+WN: 
+
+$$\sigma _{WN}^2 = \frac{1}{ {\Delta t} }\sigma _w^2 = \frac{1}{ {0.0025} } 1.24\times 10^{-4} = 6.1504\times 10^{-6} $$
 
 Hence, to generate the models one should use:
 
