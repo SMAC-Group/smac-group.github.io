@@ -234,10 +234,10 @@ Below are the results from the parameter recovery simulation.
 
 $\tau = 537$ parameter recovery
 
-![Tau Parameter Recovery](/assets/posts/gmwm-simulation/tau_graph-1.png)
+![Tau Parameter Recovery](/assets/images/posts/gmwm-simulation/tau_graph-1.png)
  $\sigma_b = 1.2\times 10^{-6}$ parameter recovery
 
-![Sigma_b Parameter Recovery](/assets/posts/gmwm-simulation/sigb_graph-1.png)
+![Sigma_b Parameter Recovery](/assets/images/posts/gmwm-simulation/sigb_graph-1.png)
  $\sigma_w = 1.24\times 10^{-4}$ parameter recovery
 
-![Sigma_w Parameter Recovery](/assets/posts/gmwm-simulation/sigw_graph-1.png)
+![Sigma_w Parameter Recovery](/assets/images/posts/gmwm-simulation/sigw_graph-1.png)
