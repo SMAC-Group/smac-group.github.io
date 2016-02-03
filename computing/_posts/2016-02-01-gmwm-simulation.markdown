@@ -10,7 +10,6 @@ tags:
 mathjax: true
 spic: "assets/images/site/cities/lavaux_reduced.jpg"
 ---
-
 Background
 ==========
 
@@ -19,15 +18,15 @@ The following simulation was designed to mimic the simulation setup in the paper
 Replicating the Simulation Values
 =================================
 
-On page 172 of Section V-C, the authors of the paper provide a very brief description of the simulation run. In this particular case, they emphasis that the parameters used within the simulation are that of $z$-gyroscope of the BMX0555 MEMS IMU listed in Table II on page 171. However, the simulation results presented in boxplot form in Figure 11 on page 173, indicate that these values could not be selected. Hence, we tried to match the "ground" truth values with ones closest to them as given by the varying BMX0555 parameters listed in Table IV.
+On page 172 of Section V-C, the authors of the paper provide a very brief description of the simulation run. In this particular case, they emphasis that the parameters used within the simulation are that of $z$-gyroscope of the BMX0555 MEMS IMU listed in Table II on page 171. However, the simulation results presented in boxplot form in Figure 11 on page 173, indicate that these values could not be selected. Hence, we asked the authors to provide the values for the simulation. Thus, the values listed next are not found on the table. We appreciate the authors taking out time to respond to our request.
 
-That is, we assume the authors are using:
+The values the authors used to conduct the simulation are:
 
--   $\tau _b = 537$ from $x$-gyro
--   $\sigma _b = 1.2\times 10^{-6}$ from $z$-gyro
--   $\sigma _{w} = 1.24\times 10^{-4}$ from $x$-gyro
+-   $\tau _b = 530.8$
+-   $\sigma _b = 1.148\times 10^{-6}$
+-   $\sigma _{w} = 1.064\times 10^{-4}$
 
-Note: The $\sigma$ values listed are the standard deviations and not the variances. Also, the value for $\sigma _{w}$ is not accurate as the simulation lists a value closer to $1.08 \times 10^{-4}$, which would indicate that it is from the MPU6500 $y$-gyroscope instead of the BMX0555.
+Note: The $\sigma$ values listed are the standard deviations and not the variances.
 
 From the simulation, the authors state that the signal lasts for 12 hours. The frequency is not clearly stated, however, previous sections of the paper use 400 Hz. Thus, we have $freq = 400$. With this in hand, the signal length of the synthetic data is given from: $400 \times 60 \times 60 \times 12 = 17,280,000$.
 
@@ -37,10 +36,10 @@ Converting a discrete-time model to a GMWM suitable modeling term
 On page 167, the authors then go on to define a discrete-time equivalent of the bias process (1b) as:
 
 $$\begin{align*}
-            X_t &= \exp\left(- \frac{1}{\tau_b} \Delta t \right) X_{t-1} + w_t, \\
-            & w_t \sim \mathcal{N}(0, \sigma_{b}^2)\\
-            & \sigma_{b}^2 = - \frac{\sigma_w^2 \tau_b}{2} \left(\exp\left(- \frac{2 \Delta t}{\tau_b}\right) - 1\right)\\
-            Y_t &\sim \mathcal{N} (0,\frac{\sigma_w^2}{\Delta t})\\
+            X_t &= \exp\left(- \frac{1}{\tau_b} \Delta t \right) X_{t-1} + w_t, \$$0.2cm]
+            & w_t \sim \mathcal{N}(0, \sigma_{b}^2)\$$0.2cm]
+            & \sigma_{b}^2 = - \frac{\sigma_w^2 \tau_b}{2} \left(\exp\left(- \frac{2 \Delta t}{\tau_b}\right) - 1\right)\$$0.2cm]
+            Y_t &\sim \mathcal{N} (0,\frac{\sigma_w^2}{\Delta t})\$$0.2cm]
             Z_t &= X_t + Y_t
 \end{align*}$$
 
@@ -49,17 +48,15 @@ Given this formulation, there needs to be a slight transformation so that the [g
 Converting to equations preloaded into the framework yields:
 
 AR1: $$\begin{align*}
-  \phi  &= \exp \left( { - \frac{1}{ { {\tau _b} } }\Delta t} \right)  = \exp \left( { - \frac{1}{ { {537} } }0.0025} \right)  = 0.9999953\\
-  \sigma _{AR}^2 &=  - \frac{ {\sigma _b^2{\tau _b} } }{2}\left[ {\exp \left( { - \frac{ {2\Delta t} }{ { {\tau _b} } } } \right) - 1} \right] =  - \frac{ {1.2\times 10^{-6}*{537} } }{2}\left[ {\exp \left( { - \frac{ {2* 0.0025} }{ { {537} } } } \right) - 1} \right] =  3.5999832\times 10^{-15}\\
+  \phi  &= \exp \left( { - \frac{1}{ { {\tau _b} } }\Delta t} \right)  = \exp \left( { - \frac{1}{ { {530.8} } }0.0025} \right)  = 0.9999953\\
+  \sigma _{AR}^2 &=  - \frac{ {\sigma _b^2{\tau _b} } }{2}\left[ {\exp \left( { - \frac{ {2\Delta t} }{ { {\tau _b} } } } \right) - 1} \right] =  - \frac{ {1.148\times 10^{-6}*{530.8} } }{2}\left[ {\exp \left( { - \frac{ {2* 0.0025} }{ { {530.8} } } } \right) - 1} \right] =  3.2947445\times 10^{-15}\\
 \end{align*}$$
 
-WN: 
-
-$$\sigma _{WN}^2 = \frac{1}{ {\Delta t} }\sigma _w^2 = \frac{1}{ {0.0025} } 1.24\times 10^{-4} = 6.1504\times 10^{-6} $$
+WN: $$\sigma _{WN}^2 = \frac{1}{ {\Delta t} }\sigma _w^2 = \frac{1}{ {0.0025} } 1.064\times 10^{-4} = 4.528384\times 10^{-6} $$
 
 Hence, to generate the models one should use:
 
-$AR1(\phi = 0.9999953, \sigma^2 = 3.5999832\times 10^{-15}) + WN(\sigma^2 = 6.1504\times 10^{-6})$
+$AR1(\phi = 0.9999953, \sigma^2 = 3.2947445\times 10^{-15}) + WN(\sigma^2 = 4.528384\times 10^{-6})$
 
 Converting from the GMWM back into the discrete-time model
 ==========================================================
@@ -98,7 +95,7 @@ Within this section, the code used to power the simulation is used. The first pa
 
 Note, from the above equation manipulations, the values that will be used to generate the models are:
 
-$AR1(\phi = 0.9999953, \sigma^2 = 3.5999832\times 10^{-15}) + WN(\sigma^2 = 6.1504\times 10^{-6})$
+$AR1(\phi = 0.9999953, \sigma^2 = 3.2947445\times 10^{-15}) + WN(\sigma^2 = 4.528384\times 10^{-6})$
 
 These values are generated in the "Conversion to GMWM Model Parameters"
 
@@ -159,9 +156,9 @@ RNGkind("L'Ecuyer-CMRG")
 freq = 400
 delta.t = 1/freq
 
-tau = 537
-sigma_b = 1.20*10^-6
-sigma_w = 1.24*10^-4
+tau = 5.308*10^2
+sigma_b = 1.148*10^(-6)
+sigma_w = 1.064*10^(-4)
 
 # Conversion to GMWM Model Parameters
 phi = exp(-1/tau * delta.t)
@@ -183,12 +180,12 @@ for(i in 1:B){
   o = gmwm.imu(mod, d)
   
   # Store results
-  results[i,] = c(i, o$estimate[1,],o$estimate[2,],o$estimate[3,] )
+  results[i,] = c(i, o$estimate[1,], o$estimate[2,], o$estimate[3,])
   
 }
 
-save(results, file="~/Desktop/res_gmwm3.rda")
-write.csv(results, file="~/Desktop/res_gmwm3.csv", row.names = F)
+save(results, file="~/Desktop/res_gmwm_corr.rda")
+write.csv(results, file="~/Desktop/res_gmwm_corr.csv", row.names = F)
 ```
 
 Converting Simulation Results
@@ -203,7 +200,7 @@ Before observing the results, the transformation back into the discrete-time sca
 setwd("~/BoxSync/GMWM_project/ICC")
 
 # Load in Data
-load("res_gmwm3.rda")
+load("res_gmwm_corr.rda")
 
 # Create data.frame for ggplot2
 d = data.frame(results)
@@ -232,12 +229,14 @@ Observing Simulation Results
 
 Below are the results from the parameter recovery simulation.
 
-$\tau = 537$ parameter recovery
+$\tau = 530.8$ parameter recovery
 
 ![Tau Parameter Recovery](/assets/images/posts/gmwm-simulation/tau_graph-1.png)
- $\sigma_b = 1.2\times 10^{-6}$ parameter recovery
+ 
+ $\sigma_b = 1.148\times 10^{-6}$ parameter recovery
 
 ![Sigma_b Parameter Recovery](/assets/images/posts/gmwm-simulation/sigb_graph-1.png)
- $\sigma_w = 1.24\times 10^{-4}$ parameter recovery
+ 
+ $\sigma_w = 1.064\times 10^{-4}$ parameter recovery
 
 ![Sigma_w Parameter Recovery](/assets/images/posts/gmwm-simulation/sigw_graph-1.png)
