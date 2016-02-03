@@ -36,10 +36,10 @@ Converting a discrete-time model to a GMWM suitable modeling term
 On page 167, the authors then go on to define a discrete-time equivalent of the bias process (1b) as:
 
 $$\begin{align*}
-            X_t &= \exp\left(- \frac{1}{\tau_b} \Delta t \right) X_{t-1} + w_t, \$$0.2cm]
-            & w_t \sim \mathcal{N}(0, \sigma_{b}^2)\$$0.2cm]
-            & \sigma_{b}^2 = - \frac{\sigma_w^2 \tau_b}{2} \left(\exp\left(- \frac{2 \Delta t}{\tau_b}\right) - 1\right)\$$0.2cm]
-            Y_t &\sim \mathcal{N} (0,\frac{\sigma_w^2}{\Delta t})\$$0.2cm]
+            X_t &= \exp\left(- \frac{1}{\tau_b} \Delta t \right) X_{t-1} + w_t, \\
+            & w_t \sim \mathcal{N}(0, \sigma_{b}^2)\\
+            & \sigma_{b}^2 = - \frac{\sigma_w^2 \tau_b}{2} \left(\exp\left(- \frac{2 \Delta t}{\tau_b}\right) - 1\right)\\
+            Y_t &\sim \mathcal{N} (0,\frac{\sigma_w^2}{\Delta t})\\
             Z_t &= X_t + Y_t
 \end{align*}$$
 
