@@ -91,7 +91,9 @@ $$\begin{align*}
 Simulation Code
 ===============
 
-Within this section, the code used to power the simulation is used. The first part is a queuing file as the simulation was deployed to the Illinois Campus Cluster to obtain the results quickly. The second part is the simulation file itself.
+As a quick note for this section, although the GMWM has no trouble handling data sets of several million of observations, it may run into memory issues when the length of time series exceeds 10 million. Indeed, the simulation study presented in this section considers a sample size exceeding 17 millions observations which may be difficult handle for most personal computers. Nevertheless, using one core of an Intel E5-2680V3 2.5 GHz Haswell CPU with 16 GBs of RAM, the *gmwm* is able to run in less than a minute for a large sample size. This memory limitation lies in the calculation of the Wavelet Variance (WV), which represents the computational bottleneck of the method and requires $n\log n$ operations. As a comparison, likelihood methods typically require *at least* $n^3$ operations and from our experience are far less stable. Moreover, the computational time of the GMWM can, if needed, be reduced by considering a simpler moment-based estimator. For example, a possible remedy to this computational bottleneck can be found in the construction of a generalized method of moments estimator which uses the autocovariances at lags $h = 0, 1, 2$. Such an estimator would only require $n$ operations while maintaining the same statistical properties as the GMWM. Though, this reduction in the computational burden would come at the cost of a reduced in efficiency which may not necessarily be problematic for such a large sample size.
+
+Within this section, the code used to power the simulation is given. The first part is a queuing file as the simulation was deployed to the Illinois Campus Cluster. The second part is the simulation file itself.
 
 Note, from the above equation manipulations, the values that will be used to generate the models are:
 
