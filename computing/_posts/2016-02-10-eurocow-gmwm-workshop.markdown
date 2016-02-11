@@ -15,10 +15,10 @@ As the lifeforce of our new statistical software package "gmwm" within the R com
 
 **Session 1: Introduction**
 
-![The GMWM: A New Framework for Inertial Sensor Calibration](/assets/conferences/eurocow2016/Eurocow_GMWM.pdf)
+[The GMWM: A New Framework for Inertial Sensor Calibration](/assets/conferences/eurocow2016/Eurocow_GMWM.pdf)
 
 **Session 2: Practical Exercises**
 
-![Guided GMWM Tutorial](/assets/conferences/eurocow2016/eurocow_GMWM_workshop_R.html)
+[Guided GMWM Tutorial](/assets/conferences/eurocow2016/eurocow_GMWM_workshop_R.html)
  
-![Take-Home Exercises](/assets/conferences/eurocow2016/eurocow_exercise_sheet.pdf) (![R Code](/assets/conferences/eurocow2016/eurocow_exercise_code.r))
+[Take-Home Exercises](/assets/conferences/eurocow2016/eurocow_exercise_sheet.pdf) (![R Code](/assets/conferences/eurocow2016/eurocow_exercise_code.r))
