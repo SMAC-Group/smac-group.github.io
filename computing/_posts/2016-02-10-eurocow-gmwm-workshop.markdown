@@ -21,4 +21,4 @@ As the lifeforce of our new statistical software package "gmwm" within the R com
 
 [Guided GMWM Tutorial](/assets/conferences/eurocow2016/eurocow_GMWM_workshop_R.html)
  
-[Take-Home Exercises](/assets/conferences/eurocow2016/eurocow_exercise_sheet.pdf) (![R Code](/assets/conferences/eurocow2016/eurocow_exercise_code.r))
+[Take-Home Exercises](/assets/conferences/eurocow2016/eurocow_exercise_sheet.pdf) ([R Code](/assets/conferences/eurocow2016/eurocow_exercise_code.r))
