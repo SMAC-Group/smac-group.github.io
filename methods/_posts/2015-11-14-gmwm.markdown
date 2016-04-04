@@ -33,7 +33,8 @@ An interesting feature of the GMWM, is that it can be made robust by providing a
 # Papers
 
 * Guerrier, S., Stebler, Y., Skaloud, J. & Victoria-Feser, M.-P., *Wavelet-Variance-Based Estimation for Composite Stochastic Processes*, Journal of the American Statistical Association (Theory & Methods), 2013. [Link](http://www.tandfonline.com/doi/full/10.1080/01621459.2013.799920), [Full text](/assets/pdfs/GMWM.pdf)
-* Guerrier, S., Molinari, R. and Victoria-Feser, M.-P. *Estimation of Time Series via Robust Wavelet Variance*. Austrian Journal of Statistics, 43(4):267–277, 2014. [Link](http://www.ajs.or.at/index.php/ajs/article/view/vol43-4-5), [Full text](/assets/pdfs/RGMWM.pdf)
+* Guerrier, S., Molinari, R. and Victoria-Feser, M.-P. *Estimation of Time Series via Robust Wavelet Variance*, Austrian Journal of Statistics, 43(4):267–277, 2014. [Link](http://www.ajs.or.at/index.php/ajs/article/view/vol43-4-5), [Full text](/assets/pdfs/RGMWM.pdf)
+* Guerrier, S., Molinari, R. and Stebler, Y. *Theoretical Limitations of Allan Variance-based Regression for Time Series Model Estimation*, IEEE Signal Processing Letters, 23(5):597-601, 2016. [Link](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7433406&filter%3DAND%28p_IS_Number%3A7439893%29), [Full text](/assets/pdfs/AVLR.pdf), [Supplementary](/assets/pdfs/Sup_AVLR.pdf)
 * Guerrier, S. and Molinari, R. *Robust Inference for Time Series: a Wavelet-Based Framework*. Submitted working paper, 2015. [Link](http://arxiv.org/abs/1512.09325), [Full text](http://arxiv.org/pdf/1512.09325v2.pdf)
 
 # Talks
