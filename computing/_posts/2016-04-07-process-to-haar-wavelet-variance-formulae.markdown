@@ -1,7 +1,7 @@
 ---
 layout: landing
 title:  "Process to Haar Wavelet Variance Formulae"
-date:   2016-04-07 18:22:52
+date:   2016-04-07 01:22:52 -0500
 tags: 
 - Generalized Method of Wavelet Moments
 - Wavelet Variance
