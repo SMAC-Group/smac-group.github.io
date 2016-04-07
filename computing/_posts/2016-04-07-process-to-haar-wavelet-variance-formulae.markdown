@@ -16,7 +16,7 @@ The following equations are derivations used within the package as they relate t
 
 The initial equations, marked by $AVa{r_n}\left[ {X\left( t \right)} \right]$, come from *Allan variance of time series models for measurement data* by Nien Fan Zhang published in Metrologia and *Analysis and Modeling of Inertial Sensors Using Allan Variance* by El-Sheimy, et. al. in IEEE Transactions on Instrumentation and Measurement. That is, these equations are derived using the Allan Variance. The relationship between the Allan variance to the Wavelet Variance is $\frac{1}{2} AVa{r_n}\left[ {X\left( t \right)} \right] = \nu _j^2$. Note, the $n$ used in the Allan variance is equivalent to $\frac{\tau_j}{2}$.
 
-The derivations below were done using [Mathematica](https://www.wolfram.com/mathematica/). The derivation file is available at: <http://smac-group.com/supporting_docs/haar_analytical_derivatives_complete.nb>
+The derivations below were done using [Mathematica](https://www.wolfram.com/mathematica/). The derivation file is available at: <http://smac-group.com/assets/supporting_docs/haar_analytical_derivatives_complete.nb>
 
 If you notice one of the derivations as being incorrected, please let us know via an issue at <https://github.com/smac-group/gmwm/issues>.
 
