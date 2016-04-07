@@ -12,9 +12,9 @@ mathjax: true
 spic: "assets/images/site/cities/lavaux_reduced.jpg"
 ---
 
-The following equations are derivations used within the package as they relate to the Haar Wavelet Variance (WV) theoretical quantities. The initial WV formula, \(\nu _j^2\), are used to calculate process to wavelet variance. The later are used within the asymptotic model selection calculations.
+The following equations are derivations used within the package as they relate to the Haar Wavelet Variance (WV) theoretical quantities. The initial WV formula, $\nu _j^2$, are used to calculate process to wavelet variance. The later are used within the asymptotic model selection calculations.
 
-The initial equations, marked by \(AVa{r_n}\left[ {X\left( t \right)} \right]\), come from *Allan variance of time series models for measurement data* by Nien Fan Zhang published in Metrologia and *Analysis and Modeling of Inertial Sensors Using Allan Variance* by El-Sheimy, et. al. in IEEE Transactions on Instrumentation and Measurement. That is, these equations are derived using the Allan Variance. The relationship between the Allan variance to the Wavelet Variance is \(\frac{1}{2} AVa{r_n}\left[ {X\left( t \right)} \right] = \nu _j^2\). Note, the \(n\) used in the Allan variance is equivalent to \(\frac{\tau_j}{2}\).
+The initial equations, marked by $AVa{r_n}\left[ {X\left( t \right)} \right]$, come from *Allan variance of time series models for measurement data* by Nien Fan Zhang published in Metrologia and *Analysis and Modeling of Inertial Sensors Using Allan Variance* by El-Sheimy, et. al. in IEEE Transactions on Instrumentation and Measurement. That is, these equations are derived using the Allan Variance. The relationship between the Allan variance to the Wavelet Variance is $\frac{1}{2} AVa{r_n}\left[ {X\left( t \right)} \right] = \nu _j^2$. Note, the $n$ used in the Allan variance is equivalent to $\frac{\tau_j}{2}$.
 
 The derivations below were done using [Mathematica](https://www.wolfram.com/mathematica/). The derivation file is available at: <http://smac-group.com/supporting_docs/haar_analytical_derivatives_complete.nb>
 
@@ -68,7 +68,7 @@ $$\begin{aligned}
    &= \frac{ {\left( { {\tau _j} - 3{\phi _1} - \left( {\frac{ { {\tau _j} } }{2} } \right)\phi _1^2 + 4\phi _1^{\left( {\frac{ { {\tau _j} } }{2} } \right) + 1} - \phi _1^{ {\tau _j} + 1} } \right){\sigma ^2} } }{ {\left( {\frac{ {\tau _j^2} }{2} } \right){ {\left( {1 - {\phi _1} } \right)}^2}\left( {1 - \phi _1^2} \right)} } \\ 
 \end{aligned}$$
 
-**Derivatives w.r.t. \(\phi\)**
+**Derivatives w.r.t. $\phi$**
 
 $$\begin{aligned}
   \frac{\partial }{ {\partial {\phi _1} } }\nu _j^2\left( { {\phi _1},{\sigma ^2} } \right) &= \frac{ {2{\sigma ^2}\left( {4\left( {\frac{ { {\tau _j} } }{2} + 1} \right)\phi _1^{\frac{ { {\tau _j} } }{2} } - \left( { {\tau _j} + 1} \right)\phi _1^{ {\tau _j} } - {\phi _1}{\tau _j} - 3} \right)} }{ { { {\left( {1 - {\phi _1} } \right)}^2}\left( {1 - \phi _1^2} \right)\tau _j^2} }   \\
@@ -81,7 +81,7 @@ $$\begin{aligned}
 \end{aligned}  \right)
 \end{aligned}$$
 
-**Derivatives w.r.t. \(\sigma^2\)**
+**Derivatives w.r.t. $\sigma^2$**
 
 $$\begin{aligned}
   \frac{\partial }{ {\partial {\sigma ^2} } }{\nu ^2}(\tau ) &= \frac{ {\frac{\tau }{2} - 3\phi  - \frac{ {\tau {\phi ^2} } }{2} + 4{\phi ^{\frac{\tau }{2} + 1} } - {\phi ^{\tau  + 1} } } }{ {\frac{ { {\tau ^2} } }{2}{ {(1 - \phi )}^2}(1 - {\phi ^2})} }\\
@@ -99,14 +99,14 @@ $$\begin{aligned}
 \end{aligned}
 $$
 
-**Derivatives w.r.t \(\theta\)** 
+**Derivatives w.r.t $\theta$** 
 
 $$\begin{aligned}
   \frac{\partial }{ {\partial {\theta _1} } }\nu _j^2\left( { {\theta _1},{\sigma ^2} } \right) &= \frac{ { {\sigma ^2}\left( {2\left( { {\theta _1} + 1} \right){\tau _j} - 6} \right)} }{ {\tau _j^2} } \\
   \frac{\partial }{ {\partial \theta _1^2} }\nu _j^2\left( { {\theta _1},{\sigma ^2} } \right) &= \frac{ {2{\sigma ^2} } }{ { {\tau _j} } }
 \end{aligned}$$
 
-**Derivatives w.r.t. \(\sigma^2\)**
+**Derivatives w.r.t. $\sigma^2$**
 
 $$\begin{aligned}
   \frac{\partial }{ {\partial {\sigma ^2} } }{\nu _j^2\left( { {\theta _1},{\sigma ^2} } \right)} &= \frac{ {\left( { { {\left( { {\theta _1} + 1} \right)}^2}{\tau _j} - 6{\theta _1} } \right)} }{ {\tau _j^2} } \\
@@ -122,21 +122,21 @@ $$\begin{aligned}
 \end{aligned}
 $$
 
-**Derivative w.r.t.\(\sigma^2\):**
+**Derivative w.r.t.$\sigma^2$:**
 
 $$\begin{aligned}
   \frac{\partial }{ {\partial {\sigma ^2} } }\nu _j^2\left( { {\theta _1},{\phi _1},{\sigma ^2} } \right) &= \frac{ {2\left( {\frac{1}{2}{ {\left( { {\phi _1} - 1} \right)}^2}\left( { - 2{\theta _1}{\phi _1} + \theta _1^2 + 1} \right){\tau _j} - \left( { {\theta _1} - {\phi _1} } \right)\left( { {\theta _1}{\phi _1} - 1} \right)\left( { - 4\phi _1^{\frac{ { {\tau _j} } }{2} } + \phi _1^{ {\tau _j} } + \left( { {\phi _1} - 1} \right){\tau _j} + 3} \right)} \right)} }{ { { {\left( { {\phi _1} - 1} \right)}^2}\left( {1 - \phi _1^2} \right)\tau _j^2} } \\
   \frac{\partial }{ {\partial {\sigma ^4} } }\nu _j^2\left( { {\theta _1},{\phi _1},{\sigma ^2} } \right) &= 0 \\
 \end{aligned} $$
 
-**Derivative w.r.t \(\theta _1\):**
+**Derivative w.r.t $\theta _1$:**
 
 $$\begin{aligned}
   \frac{\partial }{ {\partial {\theta _1} } }\nu _j^2\left( { {\theta _1},{\phi _1},{\sigma ^2} } \right) &= \frac{ {2{\sigma ^2}\left( {\frac{1}{2}{ {\left( { {\phi _1} - 1} \right)}^2}\left( {2{\theta _1} - 2{\phi _1} } \right){\tau _j} - {\phi _1}\left( { {\theta _1} - {\phi _1} } \right)\left( { - 4\phi _1^{\frac{ { {\tau _j} } }{2} } + \phi _1^{ {\tau _j} } + \left( { {\phi _1} - 1} \right){\tau _j} + 3} \right) - \left( { {\theta _1}{\phi _1} - 1} \right)\left( { - 4\phi _1^{\frac{ { {\tau _j} } }{2} } + \phi _1^{ {\tau _j} } + \left( { {\phi _1} - 1} \right){\tau _j} + 3} \right)} \right)} }{ { { {\left( { {\phi _1} - 1} \right)}^2}\left( {1 - \phi _1^2} \right)\tau _j^2} } \\
   \frac{\partial }{ {\partial \theta _1^2} }\nu _j^2\left( { {\theta _1},{\phi _1},{\sigma ^2} } \right) &= \frac{ {2{\sigma ^2}\left( { { {\left( { {\phi _1} - 1} \right)}^2}{\tau _j} - 2{\phi _1}\left( { - 4\phi _1^{\frac{ { {\tau _j} } }{2} } + \phi _1^{ {\tau _j} } + \left( { {\phi _1} - 1} \right){\tau _j} + 3} \right)} \right)} }{ { { {\left( { {\phi _1} - 1} \right)}^2}\left( {1 - \phi _1^2} \right)\tau _j^2} } \\ 
 \end{aligned}$$
 
-**Derivative w.r.t \(\phi _1\)**:
+**Derivative w.r.t $\phi _1$**:
 
 $$\begin{aligned}
   \frac{\partial }{ {\partial {\phi _1} } }\nu _j^2\left( { {\theta _1},{\phi _1},{\sigma ^2} } \right) &= \frac{ {4{\sigma ^2}{\phi _1}\left( {\frac{1}{2}{ {\left( { {\phi _1} - 1} \right)}^2}\left( { - 2{\theta _1}{\phi _1} + \theta _1^2 + 1} \right){\tau _j} - \left( { {\theta _1} - {\phi _1} } \right)\left( { {\theta _1}{\phi _1} - 1} \right)\left( { - 4\phi _1^{\frac{ { {\tau _j} } }{2} } + \phi _1^{ {\tau _j} } + \left( { {\phi _1} - 1} \right){\tau _j} + 3} \right)} \right)} }{ { { {\left( { {\phi _1} - 1} \right)}^2}{ {\left( {1 - \phi _1^2} \right)}^2}\tau _j^2} } \\
