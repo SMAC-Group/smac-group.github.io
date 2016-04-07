@@ -90,15 +90,18 @@ $$\begin{aligned}
 
 *&gt;* **NOTE** For the MA(1) process listed in Zhang on Page 552, there is a sign error between equations (21) and (22). This has been corrected here.
 
-**MA 1 process:** $$
-\begin{aligned}
+**MA 1 process:** 
+
+$$\begin{aligned}
   AVa{r_n}\left[ {X\left( t \right)} \right] &= \left( {1 + \theta _1^2} \right)\frac{ {\left( {n + \left( {2n - 3} \right)\frac{ { {\theta _1} } }{ {1 + \theta _1^2} } } \right)} }{ { {n^2} } }\sigma _a^2 \\
   \nu _j^2\left( { {\theta _1},{\sigma ^2} } \right) &= \frac{1}{2}\left( {1 + \theta _1^2} \right)\frac{ {\left( {\left( {\frac{ { {\tau _j} } }{2} } \right) + \left( {2\left( {\frac{ { {\tau _j} } }{2} } \right) - 3} \right)\frac{ { {\theta _1} } }{ {1 + \theta _1^2} } } \right)} }{ { { {\left( {\frac{ { {\tau _j} } }{2} } \right)}^2} } }{\sigma ^2} \\
    &= \frac{ {\left( { { {\left( { {\theta _1} + 1} \right)}^2}{\tau _j} - 6{\theta _1} } \right){\sigma ^2} } }{ {\tau _j^2} } 
 \end{aligned}
 $$
 
-**Derivatives w.r.t \(\theta\)** $$\begin{aligned}
+**Derivatives w.r.t \(\theta\)** 
+
+$$\begin{aligned}
   \frac{\partial }{ {\partial {\theta _1} } }\nu _j^2\left( { {\theta _1},{\sigma ^2} } \right) &= \frac{ { {\sigma ^2}\left( {2\left( { {\theta _1} + 1} \right){\tau _j} - 6} \right)} }{ {\tau _j^2} } \\
   \frac{\partial }{ {\partial \theta _1^2} }\nu _j^2\left( { {\theta _1},{\sigma ^2} } \right) &= \frac{ {2{\sigma ^2} } }{ { {\tau _j} } }
 \end{aligned}$$
