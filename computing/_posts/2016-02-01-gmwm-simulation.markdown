@@ -8,7 +8,7 @@ tags:
 - Time Series
 - Simulation Study
 mathjax: true
-spic: "assets/images/site/cities/lavaux_reduced.jpg"
+spic: "assets/images/site/cities/rome_reduced.jpg"
 ---
 Background
 ==========

@@ -1,13 +1,13 @@
 ---
 layout: landing
-title:  "Eurocow GMWM Workshop"
+title:  "Eurocow GMWM Workshop 2016"
 date:   2016-02-10 18:22:52
 tags: 
 - Generalized Method of Wavelet Moments
 - Wavelet variance
 - Time Series
 - Workshop
-spic: "assets/images/site/cities/lavaux_reduced.jpg"
+spic: "assets/images/site/cities/shanghai_reduced.jpg"
 ---
 
 As the lifeforce of our new statistical software package "gmwm" within the R computational environment grows, there is more interest in learning about the estimation methods and software. Most recently, we were honored to be invited to [EuroCOW 2016](http://www.eurocow2016.org/) at [École polytechnique fédérale de Lausanne (EPFL)](https://www.epfl.ch/index.en.html) to host a workshop on the [Generalized Method of Wavelet Moments (GMWM)](http://smac-group.com/methods/gmwm). These presentations were delivered within two workshop sessions. The first session dealt with exploring the motivation and theory behind the GMWM.  The second session  acted as a tutorial where features of package related to inertial sensor calibration where displayed. We hope that you find the contents of both sessions to be interesting and/or useful for your research!
