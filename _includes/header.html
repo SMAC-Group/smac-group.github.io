@@ -15,10 +15,10 @@
           <li class="nav-link"><a href="{{ page.url | remove_first: '/' | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}-->
-		  <li class="nav-link"><a href="{{ '/members' | prepend: site.url }}">Members</a>
-          <li class="nav-link"><a href="{{ '/methods' | prepend: site.url }}">Methods</a>
-          <li class="nav-link"><a href="{{ '/applications' |  prepend: site.url }}">Applications</a>
-          <li class="nav-link"><a href="{{ '/computing' | prepend: site.url }}">Computing</a>
+		  <li class="nav-link"><a href="{{ '/members/' | prepend: site.baseurl }}">Members</a>
+          <li class="nav-link"><a href="{{ '/methods/' | prepend: site.baseurl }}">Methods</a>
+          <li class="nav-link"><a href="{{ '/applications/' | prepend: site.baseurl }}">Applications</a>
+          <li class="nav-link"><a href="{{ '/computing/' | prepend: site.baseurl }}">Computing</a>
       </ul>
     </nav>
   </div>

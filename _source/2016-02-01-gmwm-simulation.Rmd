@@ -1,7 +1,7 @@
 ---
 layout: landing
 title:  "Simulation Study using GMWM"
-date:   2016-02-01 18:22:52
+date: 2016-02-01 18:22:52
 tags: 
 - Generalized Method of Wavelet Moments
 - Wavelet variance
@@ -10,6 +10,7 @@ tags:
 mathjax: true
 spic: "assets/images/site/cities/rome_reduced.jpg"
 ---
+
 Background
 ==========
 

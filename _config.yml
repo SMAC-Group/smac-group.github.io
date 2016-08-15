@@ -7,10 +7,10 @@ description: > # this means to ignore newlines until "baseurl:"
   Statistical Methods, Applications &amp; Computing Group 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://smac-group.com" # the base hostname & protocol for your site
-twitter_username: smac-group
-github_username: smac-group
 
+# Time to battle the mountain goat
 cover: "assets/images/site/goat-c.png"
+
 #logo: "assets/logo.png"
 # Site map plugin
 gems:
@@ -18,16 +18,21 @@ gems:
   - jekyll-paginate
 
 # Build settings
-permalink: "/:categories/:title"
+permalink: "/:categories/:title/"
 
-markdown: kramdown
 paginate: 3
 paginate_path: "/page:num/"
 
+# Default Time Render
+timezone: America/Chicago
+
+# Render engine
+markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge 
 
+# Social Media Presence (only GitHub)
 social:
   - name: GitHub
     icon: github
@@ -36,5 +41,5 @@ social:
     desc: Fork Our Projects on GitHub
     share: false
     
-    
+# Google Analytics Tracking Info
 ga_tracking_id: "UA-71142600-1"

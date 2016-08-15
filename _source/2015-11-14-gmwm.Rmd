@@ -2,6 +2,7 @@
 layout: landing
 title:  "Generalized Method of Wavelet Moments"
 date:   2015-11-14 18:22:52
+categories: methods
 tags: 
 - Generalized Method of Wavelet Moments
 - Robust statistics

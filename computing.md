@@ -17,7 +17,7 @@ permalink: /computing/
 	{% for post in site.categories['computing'] %}
 		<div class="box">
 			<strong>
-				<a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+				<a href="{{ post.url }}">{{ post.title }}</a>
 			</strong>
 			{% if post.spic %} 
 			<img src="{{ post.spic | prepend:'/' | prepend: site.url }}" alt="{{ post.title }}" class="nv" />
@@ -25,7 +25,7 @@ permalink: /computing/
 			<img src="{{ 'assets/images/site/cities/earth_default_reduced.jpg' | prepend: site.url }}" alt="{{ post.title }}" class="nv"/>
 			{% endif %}
 			<p class="post-abstract">{{ post.abstract }} </p>
-			<a href="{{ post.url | prepend: site.url }}">Read More &raquo;</a>
+			<a href="{{ post.url }}">Read More &raquo;</a>
 		</div>
 	{% endfor %}
 </div>

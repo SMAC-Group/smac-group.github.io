@@ -1,11 +1,17 @@
 ---
 title: "Process to Haar Wavelet Variance Formulae"
 author: "James Balamuta"
-date: "`r Sys.Date()`"
 layout: landing
-output:
-  md_document:
-    variant: markdown_github
+categories: computing
+date:   2016-05-23 01:22:52 -0500
+tags: 
+- Generalized Method of Wavelet Moments
+- Wavelet Variance
+- Time Series
+- Haar Wavelet Filter
+- Allan Variance
+mathjax: true
+spic: "assets/images/site/cities/lavaux_reduced.jpg"
 ---
   
 The following equations are derivations used within the package as they relate to the Haar Wavelet Variance (WV) theoretical quantities. The initial WV formula, $\nu _j^2$, are used to calculate process to wavelet variance. The later are used within the asymptotic model selection calculations. 

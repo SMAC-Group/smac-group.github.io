@@ -2,6 +2,10 @@
 
 This repository powers the Jekyll/GitHub Pages version of [smac-group.com](http://smac-group.com).
 
+The repository structure is based off of 
+[the course website for STAT 385 in Summer 2016](https://github.com/coatless/stat385) 
+with the major difference being the design.
+
 # Adding New Content
 
 To add new content, like a new post or news entry, one must be knowledgeable both in [RMarkdown](http://rmarkdown.rstudio.com) and [GitHub Pull Requests](https://help.github.com/articles/using-pull-requests/). Also, one must have `jekyll` and `git` installed on their system.
@@ -14,6 +18,12 @@ xcode-select --install
 
 # Install jekyll
 gem install jekyll jekyll-sitemap jekyll-paginate
+```
+
+To effectively build the website within *R*, you must also install a few packages:
+
+```r
+install.packages(c("servr","knitr","rmarkdown"))
 ```
 
 For convenience and easy of use, there is an included `smac-website.Rproj` file that can be used to open the file directory in RStudio and, thus, negating the need to work by command line. 

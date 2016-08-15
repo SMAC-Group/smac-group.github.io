@@ -2,6 +2,7 @@
 layout: landing
 title:  "Eurocow GMWM Workshop 2016"
 date:   2016-02-10 18:22:52
+categories: computing
 tags: 
 - Generalized Method of Wavelet Moments
 - Wavelet variance
