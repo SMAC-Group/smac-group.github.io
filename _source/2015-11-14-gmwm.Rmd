@@ -1,0 +1,44 @@
+---
+layout: landing
+title:  "Generalized Method of Wavelet Moments"
+date:   2015-11-14 18:22:52
+tags: 
+- Generalized Method of Wavelet Moments
+- Robust statistics
+- Wavelet variance
+- Time Series
+mathjax: true
+spic: "assets/images/site/cities/lavaux_reduced.jpg"
+---
+
+The GMWM is a very general method for the estimation of many time series models and is particularly advantageous for the estimation of latent time series or State-Space Models (SSM). *Stebler et al. (2011)* showed that for these models the traditional Maximum Likelihood (ML) and other related estimators often lead to unreliable results even in moderately complex settings. On the other hand, GMWM-based estimators can easily overcome these difficulties and can also surprisingly outperform the ML for more traditional models such as ARMA models (see e.g. Guerrier et al., 2015). Using a quantity called Wavelet Variance (WV), the idea behind the GMWM can be extended to a wide range of dependent data settings going from the modeling of latent time series and SSM to non-stationary and spatio-temporal models.
+
+This method was originally proposed for the estimation of latent time series models, which can be represented as SSM, but it is sufficiently general to estimate a wide range of time series models, including “classical” models such as ARMA models. Latent time series models are commonly used in many domains such as engineering or natural sciences as well as finance and others (see e.g. *Guerrier, 2013* for a detailed discussion on these models). Generally being very complicated and/or computationally intensive to estimate, the GMWM manages to estimate these models by providing a method which, among others, is (i) straightforward to implement, (ii) as computationally efficient as the well-known fast Fourier transform and (iii) has appropriate asymptotic properties.
+
+An interesting feature of the GMWM, is that it can be made robust by providing a robust version of the quantity it is based on (i.e. the WV) providing as a results a new framework for the robust estimation of time series models. Indeed, as far as robust time series inference goes, existing literature has mainly aimed at the estimation of specific time series models (see e.g. *Maronna et al., 2006*). The implementation of these methods in statistical and quantitative analysis softwares is lacking, if not absent, in the majority of cases. Within this framework, we proposed in *Guerrier et al. (2014)* and *Guerrier et al. (2015)* a robust version of the WV as well as of the GMWM (RGMWM) based on *M*-estimation techniques. This computationally efficient approach has, among others, the following properties:
+
+* Widely applicable: as opposed to many proposed robust approaches for time series models estimation, the RGMWM is very general and can estimate a wide range of models such as ARMA or a variety of SSM;
+* Consistent and asymptotically normally distributed: under mild conditions the RGMWM has convenient asymptotic properties allowing for adequate estimation and inference.
+
+**References:**
+
+* Guerrier, S. *Two Essays in Statistics: A Prediction Divergence Criterion for Model Selection and Wavelet Variance Based Estimation of Latent Time Series Models*. PhD thesis, University of Geneva,
+2013.
+* Guerrier, S. Molinari, R. and Victoria-Feser, M.-P. *Estimation of Time Series via Robust Wavelet Variance*. Austrian Journal of Statistics, 43(4):267–277, 2014.
+* Guerrier, S. and Molinari, R. *Robust Inference for Time Series: a Wavelet-Based Framework*. Submitted working paper, 2015.
+* Maronna, R.A., Martin, R.D. and Yohai, V.J. *Robust statistics*. J. Wiley, 2006.
+* Stebler, Y., Guerrier, S., Skaloud, J. and Victoria-Feser, M.-P. *Constrained Expectation-Maximization Algorithm for Stochastic Inertial Error Modeling: Study of Feasibility*. Measurement Science and Technology, 22(8), 2011.
+
+
+# Papers
+
+* Guerrier, S., Stebler, Y., Skaloud, J. & Victoria-Feser, M.-P., *Wavelet-Variance-Based Estimation for Composite Stochastic Processes*, Journal of the American Statistical Association (Theory & Methods), 2013. [Link](http://www.tandfonline.com/doi/full/10.1080/01621459.2013.799920), [Full text](/assets/pdfs/GMWM.pdf)
+* Guerrier, S., Molinari, R. and Victoria-Feser, M.-P. *Estimation of Time Series via Robust Wavelet Variance*, Austrian Journal of Statistics, 43(4):267–277, 2014. [Link](http://www.ajs.or.at/index.php/ajs/article/view/vol43-4-5), [Full text](/assets/pdfs/RGMWM.pdf)
+* Guerrier, S., Molinari, R. and Stebler, Y. *Theoretical Limitations of Allan Variance-based Regression for Time Series Model Estimation*, IEEE Signal Processing Letters, 23(5):597-601, 2016. [Link](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7433406&filter%3DAND%28p_IS_Number%3A7439893%29), [Full text](/assets/pdfs/AVLR.pdf), [Supplementary](/assets/pdfs/Sup_AVLR.pdf)
+* Guerrier, S. and Molinari, R. *Robust Inference for Time Series: a Wavelet-Based Framework*. Submitted working paper, 2015. [Link](http://arxiv.org/abs/1512.09325), [Full text](http://arxiv.org/pdf/1512.09325v2.pdf)
+
+# Talks
+
+* Robust Inference for Time Series: a Wavelet-Based Framework was presented in the following statistical seminars: University of Southern Carolina (2015), Oregon State University (2015), City University of New York (2015) & University of Illinois, Urbana-Champaign (2015) [Slides](/assets/pdfs/usc_2015_rgmwm.pdf)
+* Wavelet-Variance-Based Estimation of Latent Time Series Models was presented in the following statistical seminars: University of California, Santa Barbara (2013), University of Illinois, Urbana-Champaign (2014), Texas A&M University (2014), Georges Mason University (2104) & Bocconi University (2014)  [Slides](/assets/pdfs/TAMU.pdf)
+

@@ -15,6 +15,7 @@ cover: "assets/images/site/goat-c.png"
 # Site map plugin
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
 
 # Build settings
 permalink: "/:categories/:title"
