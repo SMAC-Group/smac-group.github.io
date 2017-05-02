@@ -38,3 +38,5 @@ social:
     
 # Google Analytics Tracking Info
 ga_tracking_id: "UA-71142600-1"
+
+theme: jekyll-theme-cayman
