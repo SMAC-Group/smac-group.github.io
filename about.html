@@ -1,0 +1,162 @@
+---
+layout: default
+section_id: about
+members:
+  - name: Stéphane Guerrier
+    position: Assistant Professor (UIUC)
+    desc:
+       Stéphane Guerrier obtained a M.Sc. in navigation techniques and geomatics engineering from the Swiss Federal Institute of Technology Lausanne (EPFL) in 2008 for his work on the integration of redundant MEMS-IMUs with GPS. He also obtained a Ph.D in statistics from the University of Geneva in 2013. His research focuses on time series and model selection. He is now an Assistant Professor in the Department of Statistics of the University of Illinois at Urbana-Champaign.
+    avatar: images/sguerrier.jpg
+    socials:
+      - email_class: fa fa-envelope
+        adress_email: stephane@illinois.edu
+      - icon_class: fa fa-user
+        url: https://publish.illinois.edu/stephane/
+  - name: Nabil Mili
+    position: Privat-docent (UNIGE)
+    desc:
+      Nabil Mili holds a Doctorate in Medicine and a M. Sc. in Statistics from the University of Geneva. He is board certified in Anesthesiology (Switzerland). His domains of interest are model selection in high dimensional data and the connection between statistical formalization and medical reasoning.
+    avatar: images/nmili.jpg
+    socials:
+      - email_class: fa fa-envelope
+        adress_email: nabil.mili@unige.ch
+      - icon_class: fa fa-user
+        url: 
+  - name: Roberto Molinari
+    position: Visiting Assistant Professor (UCSB)
+    desc:
+      Roberto Molinari obtained a Master degree in International Affairs at the LUISS Guido Carli University in Rome which brought to experiences in the UNECE, OECD and Ernst &amp; Young. He then obtained a PhD in Statistics to become Visiting Professor in Statistics at the University of California, Santa Barbara. His research interests are in robust time series model estimation, spatial statistics and model selection as well as applied statistics in the field of economics, finance and medicine.
+    avatar: images/rmolinari.jpg
+    socials:
+      - email_class: fa fa-envelope
+        adress_email: molinari@pstat.ucsb.edu
+      - icon_class: fa fa-user
+        url: 
+member:
+  - name: Gaetan Bakalli 
+    position: Teaching and Research Assistant (UNIGE)
+    desc:
+        Gaetan Bakalli is a PhD student in Statistics at the University of Geneva. He hold a M.Sc in Statistics from the same University. Beforehand, he worked in various position in Finance for HSBC and Cargill. His research interest are time series, model selection as well as applied statistics in finance and engeneering.
+    avatar: images/gaet.jpg
+    socials:
+      - email_class: fa fa-envelope
+        adress_email: gaetan.bakalli@unige.ch
+      - icon_class: fa fa-user
+        url: 
+  - name: Samuel Orso
+    position: Teaching and Research Assistant (UNIGE)
+    desc:
+        Samuel Orso is a PhD student in statistics at the University of Geneva. He obtained a BSc in management and a MSc in statistics from the same university. His research interests are in copula model, robust estimation and model selection.
+    avatar: images/sorso.jpg
+    socials:
+      - email_class: fa fa-envelope
+        adress_email: samuel.orso@unige.ch
+      - icon_class: fa fa-user
+        url: 
+  - name: Haotian Xu
+    position: Teaching and Research Assistant (UNIGE)
+    desc:
+        Haotian Xu is a graduate student in the Research Center for Statistics at the University of Geneva studying towards a Ph.D degree under the supervision of Prof. Maria-Pia Victoria-Feser and Prof. Stéphane Guerrier. Before pursuing Ph.D, he earned a M.Sc. degree in Statistics at University of Illinois Urbana-Champaign. His research interests lie in the wavelet methods and estimation for state-space models.
+    avatar: images/hxu.jpg
+    socials:
+      - email_class: fa fa-envelope
+        adress_email: Haotian.Xu@unige.ch
+      - icon_class: fa fa-user
+        url: 
+  - name: Yuming Zhang
+    position: Teaching and Research Assistant (Penn State)
+    desc:
+        Yuming Zhang is a graduate student at Pennsylvania State University. She holds a BSc with Mathematics and Statistics majors at the University of Illinois at Urbana-Champaign. She has held a position as a Teaching Assistant in the Departments of Mathematics and Statistics, and has interned in GF Securities and China Construction Bank where she performed various financial analyses.
+    avatar: images/yzhang.jpg
+    socials:
+      - email_class: fa fa-envelope
+        adress_email: yzhan216@illinois.edu
+      - icon_class: fa fa-user
+        url:
+---
+
+<!--Image size: 250 X 250-->
+<div class='two spacing'></div>
+<div class='row'>
+  <div class='large-12 columns'>
+    <h3>Faculty </h3>
+    <div class='spacing'></div>
+  </div>
+</div>
+<div class='row'>
+  {% for member in page.members %}
+   <div class='medium-4 medium-3 large-3 columns end'>
+      <div class='mod modTeamMember style-2'>
+        <div class='member'>
+          <img class="avatar" alt="" src="{{site.url}}/{{member.avatar}}" />
+          <div class='overlay'>
+            <ul class='socials'>
+              {% for social in member.socials %}
+                <li>
+                  <a href='{{social.url}}'>
+                    <i class='{{social.icon_class}}'></i>
+                   </a>
+                  <a href='mailto:{{social.adress_email}}'>
+                    <i class='{{social.email_class}}'></i>   
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <h3>{{member.name}}</h3>
+        <p class='position'>{{member.position}}</p>
+        <p>{{member.desc}}</p>
+        <div class='two spacing'></div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<div class='three spacing'></div>
+<div class='row'>
+  <div class='large-12 columns'>
+    <h3>Students </h3>
+    <div class='spacing'></div>
+  </div>
+</div>
+
+<div class='row'>
+  {% for member in page.member %}
+    <div class='small-6 medium-3 large-3 columns'>
+      <div class='mod modTeamMember style-2'>
+        <div class='member'>
+          <img class="avatar" alt="" src="{{site.url}}/{{member.avatar}}" />
+          <div class='overlay'>
+            <ul class='socials'>
+              {% for social in member.socials %}
+                 <li>
+                  <a href='{{social.url}}'>
+                    <i class='{{social.icon_class}}'></i>
+                   </a>
+                  <a href='mailto:{{social.adress_email}}'>
+                    <i class='{{social.email_class}}'></i>   
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+            <ul class='emails'>
+              {% for email in member.emails %}
+                <li>
+                  <a href='mailto:{{email.adress_email}}'>
+                    <i class='{{email.icon_class}}'></i>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <h3>{{member.name}}</h3>
+        <p class='position'>{{member.position}}</p>
+        <p>{{member.desc}}</p>
+        <div class='two spacing'></div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<div class='three spacing'></div>
+

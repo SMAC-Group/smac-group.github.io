@@ -1,130 +1,196 @@
 ---
 layout: default
+section_id: home
+slides:
+  - bg: images/bruxelles.jpg
+    title: Inference for Complex Dependent Data
+  - bg: images/rome_large.jpg
+    title: Computational Biology and Omics
+  - bg: images/shanghai.jpg
+    title: Computational Statistics
+  - bg: images/geneva.jpg
+    title: Robust Statistics
+  - bg: images/montreux.jpg
+    title: Model Selection
+  - bg: images/canton.jpg
+    title: Applied Statistics
+<!--Image size: 1090 X 545-->
+highlights:
+  - text: "New manuscript on the properties of the Allan Variance (Wavelet Variance) for non-stationary processes made available on the arXiv."
+    date: 2017-04-21
+    url: https://arxiv.org/abs/1702.07795
+  - text: "Two abstracts accepted to the ION GNSS 2017 conference that will take place next September in Portland, USA. Congratulations to Ahmed Radi (University of Calgary) and Gaetan Bakalli (University of Geneva) who first authored these papers!"
+    date: 2017-04-25
+    url: https://www.ion.org/gnss/sessions.cfm?sessionID=698
+
+news:
+  - text: "Stéphane Guerrier and Roberto Molinari have accepted offers respectively as tenure track Assistant Professor and Research Associate at Pennsylvania State University."
+    date: 2017-04-27
+  - text: "Yuming Zhang has received the University Graduate Fellowship. This prestigious fellowship is made at the college level and is offered to the 100 most promising incoming students at Pennsylvania State University.  Congratulations to her!"
+    date: 2017-04-27
+  - text: "Yuming Zhang has been awarded the bronze tablet that is awarded to the top three percent of the students in their graduating class to recognize their sustained academic achievement at the University of Illinois at Urbana-Champaign. Congratulations to her!"
+    date: 2017-04-17
 ---
-<div class="home">
 
-<div class="page">
-<header class="post-header">
-</header>
+<div class='full no-padding'>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class="large-9 large-centered columns">
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for slide in page.slides %}
+            <div class='slide'>
+              <img alt="" src="{{slide.bg}}"/>
+              <div class='caption'>
+                <p>{{slide.title}}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-    
-<span class="page-divider">
-  <span class="one"></span>
-  <span class="two"></span>
-</span>
-    
-{% include graphical_head.html %}
-
-<div class="wrapper">
-
-<section class="intro">
-    Welcome to the SMAC Group! We are actively working on new advancements within statistical methodology, real-world applications, and computing technologies. To learn more about the various projects we are working on, click on a category below!
-</section>
-
-<section class="mgrid">
-    <div class="box">
-		<h3><a href="{{ '/methods/' | prepend: site.baseurl }}">Methods</a></h3>
-		<image src="{{ 'assets/images/site/cities/geneve_reduced.jpg' | prepend: site.baseurl }}" alt="Methods" class="nv"/>
-		<p>Developments of new statistical methods.</p>
-		<a href="{{ '/methods/' | prepend: site.baseurl }}">Read more &raquo;</a>
-
+<div class='full no-padding'>
+  <div class='spacing'></div>
+  <div class='row'>
+    <div class="large-7 large-centered columns">
+    <center>
+      <p style='font-size: 1.2rem; font-style: italic;'>
+          Welcome to the SMAC Group! <br> 
+          Our focus consists in delivering advancements within the fields of statistical methodology, real-world applications and computing.
+        </p></center>
+    </div>
   </div>
-    <div class="box">
-        <h3><a href="{{ '/applications/' | prepend: site.baseurl }}">Applications</a></h3>
-		<image src="{{ 'assets/images/site/cities/bruxelles_reduced.jpg' | prepend: site.baseurl }}" alt="Applications" class="nv"/>
-		<p>Applications of theory to real-world problems.</p>
-		<a href="{{ '/applications/' | prepend: site.baseurl }}">Read more &raquo;</a>
-  </div>
-    <div class="box">
-		<h3><a href="{{ '/computing/' | prepend: site.baseurl }}">Computing</a></h3>
-		<image src="{{ 'assets/images/site/cities/chicago_reduced.jpg' | prepend: site.baseurl }}" alt="Computing" class="nv"/>
-		<p>Computational details behind the methods.</p>
-		<a href="{{ '/computing/' | prepend: site.baseurl }}">Read more &raquo;</a>
-  </div>
-</section>
 </div>
-
-<span class="page-divider">
-  <span class="one"></span>
-  <span class="two"></span>
-</span>
-
-
-<div class="wrapper">
-<h2>Recent Announcements</h2>
-<ul class="post-list">
-  {% for post in paginator.posts %}
-  <li>
-    <h3>
-      <a class="post-link" href="{{ post.url | remove_first: '/' | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h3>
-    <section class="post-excerpt" itemprop="description">
-      <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-    </section>
-    <section class="post-meta">
-    	<div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
-    	<div class="post-categories">
-    	{% if post.categories %}in {% for cat in post.categories %}
-    	  {% if site.jekyll-archives %}
-    		<a href="{{ site.baseurl }}category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-    	  {% else %}
-    	  <span>{{ cat | capitalize }}</span>{% if forloop.last == false %}, {% endif %}
-    	  {% endif %}
-    	{% endfor %}{% endif %}
-    	</div>
-    </section>
-  </li>
-  {% if forloop.last == false %}
-  <hr>
-  {% endif %}
+  <div class='mod modGallery'>
+    <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
+      {% for image in page.image %}
+        <li class='{{image.class}}'>
+          <a href='{{image.link_to}}'>
+            <img alt="" src="{{image.image}}" />
+            <div class='overlay' style='background: rgba(143, 221, 115, 0.8);'>
+              <div class='thumb-info'>
+                <h3>{{image.title}}</h3>
+                <p>{{image.desc}}</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+<div class='row'>
+  {% for service in page.services %}
+    <div class='medium-3 large-3 columns'>
+      <div class='fadein mod modIconText' data-delay='{{ 200 | times:forloop.index0 }}'>
+        <div class='icon-text-circle'>
+          <i class='{{service.icon_class}}'></i>
+          <h3>{{service.title}}</h3>
+          <p>{{service.desc}}</p>
+        </div>
+        <div class='two spacing'></div>
+      </div>
+    </div>
   {% endfor %}
-</ul>
-    
-    
-    
-<nav class="pagination" role="navigation">
-	<p>
-    {% if paginator.next_page %}
-    <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">
-	    <span class="fa-stack fa-lg">
-			  <i class="fa fa-square fa-stack-2x"></i>
-			  <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-			</span>
-		</a>
-    {% else %}
-    <span class="fa-stack fa-lg">
-			<i class="fa fa-square fa-stack-2x"></i>
-			<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-		</span>
+</div>
+<hr>
+<div class='two spacing'></div>
+<div class='row'>
+  <div class='medium-6 columns'>
+    <h3>Highlights</h3>
+    <div class='spacing'></div>
+    <div class='mod modTestimonials simple' >
+      <div class='row'>
+        <div class='small-12 columns'>
+          <div class='items' >
+            {% for highlights in page.highlights  %}
+              <div class='item'>
+                <p class='quote' idle="10000">{{highlights.text}}</p>
+                    <div class='spacing'></div>
+                    <a class='button small' href='{{highlights.url}}'>Link</a>
+                    <div class='spacing'></div>
+                    <p class='date'>{{highlights.date | date: "%B %d, %Y" }}</p>
+              </div>         
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='medium-6 columns'>
+    <h3>News</h3>
+    <div class='spacing'></div>
+    <div class='mod modTestimonials simple'>
+      <div class='row'>
+        <div class='small-12 columns'>
+          <div class='items'>
+            {% for news in page.news  %}
+              <div class='item'>
+                <p class='quote'>{{news.text}}</p>
+                <div class='author'>
+                  <p class='author-avatar'>
+                    <img alt="" src="{{news.avatar}}" />
+                    <div class='content'>
+                        <p class='date'>{{news.date | date: "%B %d, %Y" }}</p>
+                    </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='row'>
+  <div class='large-12 columns'>
+    <h3></h3>
+    <div class='spacing'></div>
+    <div class='mod modClients' data-slides_to_show='5'>
+      <div class='clients'>
+        {% for client in page.clients %}
+          <div><img alt="" src="{{client}}" /></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class='row'>
+  <div class='large-12 columns'>
+    <h3>
+      Our recent posts
+      /
+      <a href='blog/index.html'>View more posts</a>
+    </h3>
+    <div class='spacing'></div>
+  </div>
+</div>
+<div class='row'>
+  {% for post in site.posts %}
+    {% if forloop.index > 3 %}
+      {% break %}
     {% endif %}
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-      <a class="newer-posts" href="{{ site.baseurl }}">
-		    <span class="fa-stack fa-lg">
-				  <i class="fa fa-square fa-stack-2x"></i>
-				  <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-				</span>
-			</a>
-      {% else %}
-      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">
-		    <span class="fa-stack fa-lg">
-				  <i class="fa fa-square fa-stack-2x"></i>
-				  <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-				</span>
-			</a>
-      {% endif %}
-    {% else %}
-    <span class="fa-stack fa-lg">
-		  <i class="fa fa-square fa-stack-2x"></i>
-		  <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-		</span>
-    {% endif %}
-  </p>
-  <p>
-    <a href="{{ site.baseurl }}archive">View All Posts by Category</a>
-  </p>
-</nav>
 
+
+    <div class='large-4 medium-4 columns'>
+      <div class='mod modBlogPost no_bg simple'>
+        {% for image in post.images %}
+          {% if forloop.index > 1 %}
+            {% break %}
+          {% endif %}
+          <a href="{{post.url}}"><img alt="" src="{{image}}" /></a>
+        {% endfor %}
+        <div class='content'>
+          <p class='date'>{{post.date | date: "%B %d, %Y" }}</p>
+          <h4><a href="{{post.url}}">{{post.title}}</a></h4>
+          <p>{{post.excerpt | truncatewords: 25 }}</p>
+        </div>
+      </div>
+    </div>
+
+  {% endfor %}
+  <div class='two spacing'></div>
 </div>
-</div>
+

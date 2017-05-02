@@ -1,0 +1,80 @@
+---
+layout: default
+section_id: portfolio
+images:
+  - images/applied-big.jpg
+
+papers: 
+  - title: Guerrier, S., Stebler, Y., Skaloud, J. &amp Victoria-Feser, M.-P., Wavelet-Variance-Based Estimation for Composite Stochastic Processes, Journal of the American Statistical Association (Theory & Methods), 2013.
+    url: http://www.tandfonline.com/doi/full/10.1080/01621459.2013.799920
+    text: 
+
+---
+<!--Image size: 800 X 500-->
+<div class='full'>
+  <div class='row'>
+    <div class='large-10 large-centered columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide">
+              <img src="{{site.url}}/{{image}}" alt="">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+<div class='full no-padding'>
+  <div class='spacing'></div>
+  <div class='row'>
+     <div class='small-3 small-centered columns'>
+        <h3>Applied Statistics</h3>
+    </div>
+  </div>
+</div>
+    <div class='large-12 columns'>
+      <h4>Motivation</h4>
+      <p>
+          Statistical research is often focused on the derivation of theoretical properties of different methods and estimation techniques. However these properties are of little use if the methods themselves are unable to respond to real-world problems where there is a need to use appropriate analytical tools. Our work aims at delivering these tools whenever they are not available or further investigating the properties of existing approaches which allow to answer a specific applied question. With collaborations within the academic, public and private sector, we are extremely motivated in learning about different fields of research while providing concrete statistical answers to these applied problems.
+      </p>
+       <h4>Publications</h4>
+      <ul class='large-12 columns'>
+        {% for paper in page.papers %}
+          <li class='{{paper.class}}'>
+            {{paper.title}} 
+              <a href="{{paper.url}}">Link</a>  <a href="{{paper.text}}">Full text</a>
+              <div class='spacing'></div>
+          </li>
+        {% endfor %}
+      </ul>
+      <h4>Conference Proceedings</h4>
+      <div class='spacing'></div>
+      <ul class='large-12 columns'>
+        {% for conference in page.conferences %}
+          <li class='{{conference.class}}'>
+            {{conference.title}} 
+              <a href="{{conference.url}}">Link</a>  <a href="{{conference.text}}">Full text</a>
+              <div class='spacing'></div>
+          </li>
+        {% endfor %}
+      </ul>
+      <div class='spacing'></div>
+    </div>
+  </div>
+    <div class='spacing'></div>
+    <div class='row'></div> 
+    <div class="large-2 large-offset-9 columns">
+        <ul class='info'>
+        <li>
+          <div class='spacing'></div>
+          <a href='Reseach_Robust.html' title='previous'>
+            <i class='icon-left-open'></i>
+          </a>
+          <a href='Research.html' title='back to work list'>
+            <i class='icon-layout'></i>
+          </a>
+        </li>
+      </ul>
+      </div>  
+  <div class='four spacing'></div>
+</div>

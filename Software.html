@@ -1,0 +1,83 @@
+---
+layout: default
+section_id: portfolio
+works:
+  - image: images/model-small.jpg
+    title: gmwm - R package
+    link_to: https://github.com/SMAC-Group/gmwm
+    class: engin ts rob
+    desc: This package provides a computationally efficient implementation of the classical and robust GMWM estimators introduced in Guerrier et al. 2013 (JASA) and Guerrier et al. 2014 (Aust J Stat). Joint work with Balamuta, J., Molinari, R. &amp; Yang, W. 
+
+  - image: images/gene-small.jpg
+    title: panning - R package
+    link_to: https://github.com/SMAC-Group/panning
+    class: bio
+    desc:  implements the algorithm presented in Guerrier et al. 2016 (Front Genet). Joint work with Balamuta, J., Molinari, R. &amp; Orso, S. A more stable version will be available on CRAN late 2017.
+
+  - image: images/computational-small.jpg
+    title: imudata - R package
+    link_to: https://github.com/SMAC-Group/imudata
+    class: engin data
+    desc: This package contains a collection of inertial sensor datasets used in various published papers (e.g. Guerrier et al. 2013 (JASA), Stebler et al. 2014 (IEEE Trans. Aerosp. Electron. Syst.), Stebler et al. 2015 (IEEE Trans. Instrum. Meas.)) to allow to reproducibility of the presented results. Joint work with Balamuta, J.  &amp; Molinari, R.
+
+  - image: images/ml.jpg
+    title: smacdata - R package
+    link_to: https://github.com/SMAC-Group/smacdata
+    class: teach data
+    desc: This data package contains a collection of time series datasets used for teaching purposes. 
+
+  - image: images/bigdata-small.jpg
+    title: exts - R package
+    link_to: https://github.com/SMAC-Group/exts
+    class: teach ts 
+    desc: This package provides various functions related to time series analysis. This package is essentially used for teaching purposes. Joint work with Balamuta, J.
+  - image: images/applied.jpg
+    title: frm  - R package
+    class: rob
+    desc: This ppackage provides a computationally efficient implementation of the indirect inference framework to estimate parametric models in a robust fashion. Joint work with Orso, S. First stable version will be released on Github late 2017.
+
+---
+<!--Image size: 1134 X 350-->
+<div class='full'>
+  <div class='row'>
+    <div class='mod modGallery'>
+      <div class='gallery-nav'>
+        <ul>
+          <li class='current'>
+            <a data-cat='all' href='#'>All</a>
+          </li>
+          <li>
+            <a data-cat='ts' href='#'>Time Series</a>
+          </li>
+            <li>
+            <a data-cat='data' href='#'>Data</a>
+          </li>
+          <li>
+            <a data-cat='rob' href='#'>Robustness</a>
+          </li>
+            <li>
+            <a data-cat='bio' href='#'>Biology</a>
+          </li>
+          <li>
+            <a data-cat='teach' href='#'>Teaching</a>
+          </li>
+          <li>
+            <a data-cat='engin' href='#'>Engineering</a>
+          </li>
+        </ul>
+      </div>
+      <ul class='gallery large-block-grid-3 medium-block-grid-3 seperated small-block-grid-2'>
+        {% for work in page.works %}
+          <li class='{{work.class}}'>
+            <a href='{{work.link_to}}'>
+              <img alt="" src="{{site.url}}/{{work.image}}" />
+            </a>
+             <h3>{{work.title}}</h3>
+            <p>{{work.desc}}</p>
+            <div class='two spacing'></div>  
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class='four spacing'></div>

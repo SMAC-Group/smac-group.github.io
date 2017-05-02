@@ -1,0 +1,81 @@
+---
+layout: default
+section_id: services
+software:
+  - icon_class: fa fa-flask
+    name: Packages
+    link_to: Software_Packages.html
+    desc:
+        2 lines description
+  - icon_class: fa fa-paper-plane-o
+    name: Online Tools
+    link_to: Sofware_Online-Tools.html
+    desc:
+      2 lines description
+  - icon_class: fa fa-tablet
+    name: Developed Code
+    link_to: Sofware_Develloped-Code.html
+    desc:
+      2 lines description
+
+soft_news:
+  - icon_class: fa fa-paper-plane-o
+    title: Graph Interface
+    desc:
+      4 lines description
+  - icon_class: fa fa-flask
+    title: Multivariate GMWM
+    desc:
+      4 lines description
+  - icon_class: fa fa-tablet
+    title: Updated Panning
+    desc:
+      4 lines description
+  - icon_class: fa fa-paper-plane-o
+    title: Live web-scrapping
+    desc:
+      4 lines description
+
+---
+
+<div class='full'>
+  <div class='row'>
+    {% for soft in page.software %}
+      <div class='medium-4 medium-4 columns'>
+        <div class='fadein mod modIconText' data-delay='{{ 200 | times:forloop.index }}'>
+          <div class='icon-text-circle'>
+            <a href='{{soft.link_to}}'><i class='{{soft.icon_class}}'></i>
+            </a>
+            <h3>{{soft.name}}</h3>
+            <p>{{soft.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <hr>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h3>Current Devellopement</h3>
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modBoxedTextSlider'>
+        <div class='boxes'>
+          {% for soft in page.soft_news %}
+            <div class='box' style='background: #f9f9f9;'>
+              <i class='{{soft.icon_class}}'></i>
+              <h4>{{soft.title}}</h4>
+              <p>{{soft.desc}}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='spacing'></div>
+

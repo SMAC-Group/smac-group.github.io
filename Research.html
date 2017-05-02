@@ -1,0 +1,74 @@
+---
+layout: default
+section_id: portfolio
+works:
+  - image: images/model-small.jpg
+    title: Inference for Dependent Data
+    link_to: Reseach_Inference.html
+    class: engin econ
+    desc: Many applications have to deal with large and complex dependence data structures coming from time, space and other dimensions of dependence. Given the various limitations of exisiting techniques, our research focuses on providing statistically sound and computationally efficient solutions to these challenges.
+  - image: images/gene-small.jpg
+    title: Computational Biology and Omics
+    link_to: Reseach_Biology.html
+    class: gene bio
+    desc: The growing amount of data in the fields of biology and genetics require new methods that allow to manage large data and reduce the dimensions of the problem in order to interpret and find patterns. We deliver new approaches that enable practitioners and researchers to achieve results that can support existing knowledge or open new avenues of research. 
+  - image: images/computational-small.jpg
+    title: Computational Statistics
+    link_to: Reseach_Computational.html
+    class: engin gene
+    desc: Big data is one of the largest challenges for this century and retrieving information from it therefore represents the main goal. Most existing statistical methods, although theoretically sound, are often unable to perform inference in these settings due to numerical or computational issues. We consequently propose approaches that preserve statistical rigour while allowing to deliver solutions also in these settings.  
+  - image: images/ml.jpg
+    title: Model Selection
+    link_to: Reseach_Model-Selection.html
+    class: gene bio engin
+    desc: In many problems the goal is to understand which variables are really contributing (and how) to explaining and predicting a certain factor of interest. Current trends show an increase in information and variables from which it is consequently necessary to identify those features that are relevant for the problem at hand. Our research focuses on delivering solutions that allow to model and select these features to provide interpretable and relevant results.
+  - image: images/bigdata-small.jpg
+    title: Robust Statistics
+    link_to: Reseach_Robust.html
+    class: engin
+    desc: Statistical modelling usually relies on the assumption that the observed data comes from a postulated model. However, reality shows many deviations from this assumption with different forms of small contaminations and outliers that can greatly influence and bias the statistical inference procedure. We deliver robust solutions that allow to limit the influence of these contaminations on the modelling process thereby delivering reliable results in these common cases.
+  - image: images/applied.jpg
+    title: Applied Statistics
+    link_to: Reseach_Applied.html
+    class: engin econ bio gene
+    desc: Statistical methods can be applied to wide range of settings but often researchers and practitioners are faced with very specific problems for which no particularly suitable method exists to analyse the data. Our research focuses on adapting and/or creating new methodologies tailored to the problem at hand in order to deliver the required responses.
+
+---
+<!--Image size: 1134 X 350-->
+<div class='full'>
+  <div class='row'>
+    <div class='mod modGallery'>
+      <div class='gallery-nav'>
+        <ul>
+          <li class='current'>
+            <a data-cat='all' href='#'>All</a>
+          </li>
+          <li>
+            <a data-cat='gene' href='#'>Genetics &amp Medecine</a>
+          </li>
+          <li>
+            <a data-cat='bio' href='#'>Biology &amp Ecology</a>
+          </li>
+          <li>
+            <a data-cat='econ' href='#'>Economics and Finance</a>
+          </li>
+          <li>
+            <a data-cat='engin' href='#'>Engineering</a>
+          </li>
+        </ul>
+      </div>
+      <ul class='gallery large-block-grid-3 medium-block-grid-3 seperated small-block-grid-2'>
+        {% for work in page.works %}
+          <li class='{{work.class}}'>
+            <a href='{{work.link_to}}'>
+              <img alt="" src="{{site.url}}/{{work.image}}" />
+            </a>
+             <h3>{{work.title}}</h3>
+            <p>{{work.desc}}</p>
+            <div class='two spacing'></div>  
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class='four spacing'></div>

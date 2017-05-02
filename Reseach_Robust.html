@@ -1,0 +1,83 @@
+---
+layout: default
+section_id: robust
+images:
+  - images/bigdata-big.jpg
+
+papers: 
+
+  - title: Guerrier, S., Molinari, R. and Victoria-Feser, M.-P. Estimation of Time Series via Robust Wavelet Variance, Austrian Journal of Statistics, 2014.
+    url: http://www.ajs.or.at/index.php/ajs/article/view/vol43-4-5
+    text: 
+---
+<!--Image size: 800 X 500-->
+<div class='full'>
+  <div class='row'>
+    <div class='large-10 large-centered columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide">
+              <img src="{{site.url}}/{{image}}" alt="">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+<div class='full no-padding'>
+  <div class='spacing'></div>
+  <div class='row'>
+     <div class='small-3 small-centered columns'>
+        <h3>Robust Statistics</h3>
+    </div>
+  </div>
+</div>
+    <div class='large-12 columns'>
+      <h4>Motivation</h4>
+      <p>
+          When performing statistical modelling and inference, the analysis often relies on the assumption that the observed data is an exact realization of a certain probabilistic model. However, in the majority of cases, this assumption is not respected since there are different sources of contamination in various applications and, even if extremely small, these can severely bias results and interpretations. For this purpose, our research aims to propose robust solutions to the various approaches that we develop, thereby greatly limiting the impact that these data contaminations can have in different (complex) settings.
+      </p>
+       <h4>Publications</h4>
+      <ul class='large-12 columns'>
+        {% for paper in page.papers %}
+          <li class='{{paper.class}}'>
+            {{paper.title}} 
+              <a href="{{paper.url}}">Link</a>  <a href="{{paper.text}}">Full text</a>
+              <div class='spacing'></div>
+          </li>
+        {% endfor %}
+      </ul>
+      <h4>Conference Proceedings</h4>
+      <div class='spacing'></div>
+      <ul class='large-12 columns'>
+        {% for conference in page.conferences %}
+          <li class='{{conference.class}}'>
+            {{conference.title}} 
+              <a href="{{conference.url}}">Link</a>  <a href="{{conference.text}}">Full text</a>
+              <div class='spacing'></div>
+          </li>
+        {% endfor %}
+      </ul>
+      <div class='spacing'></div>
+    </div>
+  </div>
+    <div class='spacing'></div>
+    <div class='row'></div> 
+    <div class="large-2 large-offset-9 columns">
+        <ul class='info'>
+        <li>
+          <div class='spacing'></div>
+          <a href='Reseach_Model-Selection.html' title='previous'>
+            <i class='icon-left-open'></i>
+          </a>
+          <a href='Research.html' title='back to work list'>
+            <i class='icon-layout'></i>
+          </a>
+          <a href='Reseach_Applied.html' title='next'>
+            <i class='icon-right-open'></i>
+          </a>
+        </li>
+      </ul>
+      </div>  
+  <div class='four spacing'></div>
+</div>

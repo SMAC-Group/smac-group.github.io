@@ -1,0 +1,58 @@
+---
+layout: default
+section_id: robust
+images:
+  - images/bigdata-small.jpg
+
+works: 
+  - paper: Guerrier, S., Stebler, Y., Skaloud, J. &amp Victoria-Feser, M.-P., Wavelet-Variance-Based Estimation for Composite Stochastic Processes, Journal of the American Statistical Association (Theory & Methods), 2013.
+    url: http://www.tandfonline.com/doi/full/10.1080/01621459.2013.799920
+    text: 
+  - paper: Guerrier, S., Molinari, R. and Victoria-Feser, M.-P. Estimation of Time Series via Robust Wavelet Variance, Austrian Journal of Statistics, 2014.
+    url: http://www.ajs.or.at/index.php/ajs/article/view/vol43-4-5
+    text: 
+---
+<!--Image size: 800 X 500-->
+<div class='full'>
+  <div class='row'>
+    <div class='large-10 large-centered columns'>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for image in page.images %}
+            <div class="slide">
+              <img src="{{site.url}}/{{image}}" alt="">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+<div class='full no-padding'>
+  <div class='spacing'></div>
+  <div class='row'>
+     <div class='small-3 small-centered columns'>
+        <h3>Robust Statistics</h3>
+    </div>
+  </div>
+</div>
+    <div class='large-12 columns'>
+      <h4>Motivation</h4>
+      <p>
+        The analysis of dependent data is nowadays ofextremely  high  importance.   While  the  worldis  expanding  in  terms  of  virtual  connections,the  presence  of  sensors  is  spreading  globallyreporting thousands of measurements each sec-ond.  Large amounts of data presenting someform  of  time  and/or  spatial  dependence  areproduced every day.  These measurements cancome for example from smart-meters in plantsto smart-shirts for athletes.  Almost every ob-ject in our everyday life has the ability to de-liver data.  Several statistical tools have beendeveloped by the members of the Lab for ex-tracting  information  from  large  and  complexstructures of dependent data.
+      </p>
+      <h4>Publications</h4>
+      <ul class='large-12 columns'>
+        {% for work in page.works %}
+          <li class='{{work.class}}'>
+            {{work.paper}} 
+              <a href="{{work.url}}">Link</a>  <a href="{{work.text}}">Full text</a>
+              <div class='spacing'></div>
+          </li>
+        {% endfor %}
+      </ul>
+      <div class='spacing'></div>
+      <a class='button small' href='https://arxiv.org/abs/1511.07662'>Link</a>
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>

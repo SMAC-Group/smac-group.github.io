@@ -1,5 +1,5 @@
 ---
-layout: landing
+layout: post
 title:  "Simulation Study using GMWM"
 date: 2016-02-01 18:22:52
 tags: 
@@ -8,31 +8,26 @@ tags:
 - Time Series
 - Simulation Study
 mathjax: true
-spic: "assets/images/site/cities/rome_reduced.jpg"
+
 ---
 
-Background
-==========
+The following simulation was designed to mimic the simulation setup in the paper "Maximum Likelihood Identification of Inertial Sensor Noise Model Parameters" of the Generalized Method of Wavelet Moments (GMWM) versus that of the integrated maximum likelihood ($$ML_i$$). The simulation setup as well as the code used to generate the simulation is contained below to ensure reproducibility.
 
-The following simulation was designed to mimic the simulation setup in the paper "Maximum Likelihood Identification of Inertial Sensor Noise Model Parameters" of the Generalized Method of Wavelet Moments (GMWM) versus that of the integrated maximum likelihood ($ML_i$). The simulation setup as well as the code used to generate the simulation is contained below to ensure reproducibility.
+##### Replicating the Simulation Values
 
-Replicating the Simulation Values
-=================================
 
-On page 172 of Section V-C, the authors of the paper provide a very brief description of the simulation run. In this particular case, they emphasis that the parameters used within the simulation are that of $z$-gyroscope of the BMX0555 MEMS IMU listed in Table II on page 171. However, the simulation results presented in boxplot form in Figure 11 on page 173, indicate that these values could not be selected. Hence, we asked the authors to provide the values for the simulation. Thus, the values listed next are not found on the table. We appreciate the authors taking out time to respond to our request.
+On page 172 of Section V-C, the authors of the paper provide a very brief description of the simulation run. In this particular case, they emphasis that the parameters used within the simulation are that of $$z$$-gyroscope of the BMX0555 MEMS IMU listed in Table II on page 171. However, the simulation results presented in box plot form in Figure 11 on page 173, indicate that these values could not be selected. Hence, we asked the authors to provide the values for the simulation. Thus, the values listed next are not found on the table. We appreciate the authors taking out time to respond to our request.
 
 The values the authors used to conduct the simulation are:
 
--   $\tau _b = 530.8$
--   $\sigma _b = 1.148\times 10^{-6}$
--   $\sigma _{w} = 1.064\times 10^{-4}$
+* $$\tau _b = 530.8$$, $$\sigma _b = 1.148\times 10^{-6}$$ & $$\sigma _{w} = 1.064\times 10^{-4}$$
 
-Note: The $\sigma$ values listed are the standard deviations and not the variances.
+Note: The $$\sigma$$ values listed are the standard deviations and not the variances.
 
-From the simulation, the authors state that the signal lasts for 12 hours. The frequency is not clearly stated, however, previous sections of the paper use 400 Hz. Thus, we have $freq = 400$. With this in hand, the signal length of the synthetic data is given from: $400 \times 60 \times 60 \times 12 = 17,280,000$.
+From the simulation, the authors state that the signal lasts for 12 hours. The frequency is not clearly stated, however, previous sections of the paper use 400 Hz. Thus, we have $$freq = 400$$. With this in hand, the signal length of the synthetic data is given from: $$400 \times 60 \times 60 \times 12 = 17,280,000$$.
 
-Converting a discrete-time model to a GMWM suitable modeling term
-=================================================================
+##### Converting a discrete-time model to a GMWM suitable modeling term
+
 
 On page 167, the authors then go on to define a discrete-time equivalent of the bias process (1b) as:
 
@@ -57,23 +52,22 @@ WN: $$\sigma _{WN}^2 = \frac{1}{ {\Delta t} }\sigma _w^2 = \frac{1}{ {0.0025} } 
 
 Hence, to generate the models one should use:
 
-$AR1(\phi = 0.9999953, \sigma^2 = 3.2947445\times 10^{-15}) + WN(\sigma^2 = 4.528384\times 10^{-6})$
+$$AR1(\phi = 0.9999953, \sigma^2 = 3.2947445\times 10^{-15}) + WN(\sigma^2 = 4.528384\times 10^{-6})$$
 
-Converting from the GMWM back into the discrete-time model
-==========================================================
+##### Converting from the GMWM back into the discrete-time model
 
 In order to properly compare the results, the previous transformation into the GMWM must be reverted. To do that, one must solve the equations in terms of the discrete-time model.
 
 Converting from an AR1:
 
-$\phi$:
+$$\phi$$:
 
 $$\begin{align*}
   \phi  &= \exp \left( { - \frac{1}{ { {\tau _b} } }\Delta t} \right) \\
   {\tau _b}  &=  - \frac{ {\Delta t} }{ {\ln \left( \phi  \right)} }\\ 
 \end{align*} $$
 
-$\sigma_{AR}^2$:
+$$\sigma_{AR}^2$$:
 
 $$\begin{align*}
   \sigma _{AR}^2 =  - \frac{ {\sigma _b^2{\tau _b} } }{2}\left[ {\exp \left( { - \frac{ {2\Delta t} }{ { {\tau _b} } } } \right) - 1} \right] \\
@@ -82,30 +76,30 @@ $$\begin{align*}
 
 Converting from WN:
 
-$\sigma_{WN}^2$:
+$$\sigma_{WN}^2$$:
 
 $$\begin{align*}
   \frac{1}{ {\Delta t} }\sigma _w^2 &= \sigma _{WN}^2 \\
   {\sigma ^2} &= \Delta t\sigma _{WN}^2 \\ 
 \end{align*} $$
 
-Simulation Code
-===============
+##### Simulation Code
 
-As a quick note for this section, although the GMWM has no trouble handling data sets of several million of observations, it may run into memory issues when the length of time series exceeds 10 million. Indeed, the simulation study presented in this section considers a sample size exceeding 17 millions observations which may be difficult handle for most personal computers. Nevertheless, using one core of an Intel E5-2680V3 2.5 GHz Haswell CPU with 16 GBs of RAM, the *gmwm* is able to run in less than a minute for a large sample size. This memory limitation lies in the calculation of the Wavelet Variance (WV), which represents the computational bottleneck of the method and requires $n\log n$ operations. As a comparison, likelihood methods typically require *at least* $n^3$ operations and from our experience are far less stable. Moreover, the computational time of the GMWM can, if needed, be reduced by considering a simpler moment-based estimator. For example, a possible remedy to this computational bottleneck can be found in the construction of a generalized method of moments estimator which uses the autocovariances at lags $h = 0, 1, 2$. Such an estimator would only require $n$ operations while maintaining the same statistical properties as the GMWM. Though, this reduction in the computational burden would come at the cost of a reduced in efficiency which may not necessarily be problematic for such a large sample size.
+
+As a quick note for this section, although the GMWM has no trouble handling data sets of several million of observations, it may run into memory issues when the length of time series exceeds 10 million. Indeed, the simulation study presented in this section considers a sample size exceeding 17 millions observations which may be difficult handle for most personal computers. Nevertheless, using one core of an Intel E5-2680V3 2.5 GHz Haswell CPU with 16 GBs of RAM, the *gmwm* is able to run in less than a minute for a large sample size. This memory limitation lies in the calculation of the Wavelet Variance (WV), which represents the computational bottleneck of the method and requires $$n\log n$$ operations. As a comparison, likelihood methods typically require *at least* $$n^3$$ operations and from our experience are far less stable. Moreover, the computational time of the GMWM can, if needed, be reduced by considering a simpler moment-based estimator. For example, a possible remedy to this computational bottleneck can be found in the construction of a generalized method of moments estimator which uses the autocovariances at lags $$h = 0, 1, 2$$. Such an estimator would only require $$n$$ operations while maintaining the same statistical properties as the GMWM. Though, this reduction in the computational burden would come at the cost of a reduced in efficiency which may not necessarily be problematic for such a large sample size.
 
 Within this section, the code used to power the simulation is given. The first part is a queuing file as the simulation was deployed to the Illinois Campus Cluster. The second part is the simulation file itself.
 
 Note, from the above equation manipulations, the values that will be used to generate the models are:
 
-$AR1(\phi = 0.9999953, \sigma^2 = 3.2947445\times 10^{-15}) + WN(\sigma^2 = 4.528384\times 10^{-6})$
+$$AR1(\phi = 0.9999953, \sigma^2 = 3.2947445\times 10^{-15}) + WN(\sigma^2 = 4.528384\times 10^{-6})$$
 
 These values are generated in the "Conversion to GMWM Model Parameters"
 
-PBS File
---------
+#####  PBS File
 
-``` bash
+
+{% highlight bash %}
 #!/bin/bash
 #
 ## Set the maximum amount of runtime to 4 Hours (queue limit) 
@@ -133,12 +127,13 @@ module load R
 
 ## Run R script in batch mode without file output
 R CMD BATCH --no-save --quiet --slave $HOME/gmwm/gmwm_comm.R
-```
+{% endhighlight %}
 
-R Simulation Script
--------------------
 
-``` r
+#####  R Simulation Script
+
+
+{% highlight r %}
 # Auto install and load if necessary
 inst_pkgs = load_pkgs = c("gmwm")
 inst_pkgs = inst_pkgs[!(inst_pkgs %in% installed.packages()[,"Package"])]
@@ -189,16 +184,17 @@ for(i in 1:B){
 
 save(results, file="~/Desktop/res_gmwm_corr.rda")
 write.csv(results, file="~/Desktop/res_gmwm_corr.csv", row.names = F)
-```
+{% endhighlight %}
 
-Converting Simulation Results
-=============================
+
+#####  Converting Simulation Results
+
 
 Before observing the results, the transformation back into the discrete-time scale model must be performed. To do so, one must:
 
 1.  Load in data obtained via simulation
 
-``` r
+{% highlight r %}
 # Set working directory
 setwd("~/BoxSync/GMWM_project/ICC")
 
@@ -208,11 +204,11 @@ load("res_gmwm_corr.rda")
 # Create data.frame for ggplot2
 d = data.frame(results)
 names(d) =  c("ID","Phi","Sig_AR1","Sig_WN")
-```
+{% endhighlight %}
 
-1.  Convert values to MLi model
+1.  Convert values to $$ML_i$$ model
 
-``` r
+{% highlight r %}
 # Calculate delta t
 freq = 400
 delta.t = 1/freq
@@ -225,21 +221,21 @@ Sig_b = sqrt(-2*d$Sig_AR1/(Tau_b*(exp(-2*delta.t/Tau_b) - 1)))
 
 # Calculate Sigma_w values
 Sig_w = sqrt(delta.t*d$Sig_WN)
-```
+{% endhighlight %}
 
-Observing Simulation Results
-============================
+##### Observing Simulation Results
+
 
 Below are the results from the parameter recovery simulation.
 
-$\tau = 530.8$ parameter recovery
+$$\tau = 530.8$$ parameter recovery
 
 ![Tau Parameter Recovery](/assets/images/posts/gmwm-simulation/tau_graph-1.png)
  
- $\sigma_b = 1.148\times 10^{-6}$ parameter recovery
+ $$\sigma_b = 1.148\times 10^{-6}$$ parameter recovery
 
 ![Sigma_b Parameter Recovery](/assets/images/posts/gmwm-simulation/sigb_graph-1.png)
  
- $\sigma_w = 1.064\times 10^{-4}$ parameter recovery
+ $$\sigma_w = 1.064\times 10^{-4}$$ parameter recovery
 
 ![Sigma_w Parameter Recovery](/assets/images/posts/gmwm-simulation/sigw_graph-1.png)

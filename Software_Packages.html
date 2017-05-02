@@ -1,0 +1,55 @@
+---
+layout: default
+section_id: packages
+packages:
+  - icon_class: fa fa-flask
+    name: gmwm - R package
+    git_link: https://github.com/SMAC-Group/gmwm
+    desc:
+     This package provides a computationally efficient implementation of the classical and robust GMWM estimators introduced in Guerrier et al. 2013 (JASA) and Guerrier et al. 2014 (Aust J Stat). Joint work with Balamuta, J., Molinari, R. &amp; Yang, W. 
+  - icon_class: fa fa-bar-chart
+    name: panning - R package
+    git_link: https://github.com/SMAC-Group/panning
+    desc:
+     implements the algorithm presented in Guerrier et al. 2016 (Front Genet). Joint work with Balamuta, J., Molinari, R. &amp; Orso, S. A more stable version will be available on CRAN late 2017.
+  - icon_class: fa fa-wrench
+    name: imudata - R package
+    git_link: https://github.com/SMAC-Group/imudata
+    desc:
+     This package contains a collection of inertial sensor datasets used in various published papers (e.g. Guerrier et al. 2013 (JASA), Stebler et al. 2014 (IEEE Trans. Aerosp. Electron. Syst.), Stebler et al. 2015 (IEEE Trans. Instrum. Meas.) to allow to reproducibility of the presented results. Joint work with Balamuta, J.  &amp; Molinari, R.
+  - icon_class: fa fa-laptop
+    name: smacdata - R package
+    git_link: https://github.com/SMAC-Group/smacdata
+    desc:
+     This data package contains a collection of time series datasets used for teaching purposes.
+  - icon_class: fa fa-puzzle-piece
+    name: frm - R package 
+    subname: (Under developement)
+    desc:
+     This package provides a computationally efficient implementation of the indirect inference framework to estimate parametric models in a robust fashion. Joint work with Orso, S. First stable version will be released on Github late 2017.
+  - icon_class: fa fa-university
+    name: exts - R package
+    git_link: https://github.com/SMAC-Group/exts
+    desc:
+     This package provides various functions related to time series analysis. This package is essentially used for teaching purposes. Joint work with Balamuta, J.
+---
+<div class='full'>
+  <div class='row'>
+    {% for package in page.packages %}
+      <div class='medium-4 large-4 columns'>
+        <div class='fadein mod modIconText' data-delay='{{ 200 | times:forloop.index }}'>
+          <div class='icon-text-circle'>
+            <a href='{{package.git_link}}'><i class='{{package.icon_class}}'>
+                </i>
+                <h3>{{package.name}}</h3>
+            </a>
+              <h5>{{package.subname}}</h5>
+              <p>{{package.desc}}</p>
+          </div> 
+          <div class='two spacing'></div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+    

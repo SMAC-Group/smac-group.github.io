@@ -1,0 +1,46 @@
+- name: Home
+  path: index.html
+  section_id: home
+- name: Members
+  path: about.html
+  section_id: members
+- name: Research
+  path: Research.html
+  section_id: research
+#  children:
+#    - name: Overview
+#      path: Research.html
+#    - name: Inference 
+#      path: Reseach_Inference.html
+#    - name: Biology 
+#      path: Reseach_Biology.html
+#    - name: Computational 
+#      path: Reseach_Computational.html
+#    - name: Model Selection 
+#      path: Reseach_Model-Selection.html
+#    - name: Robust Statistics
+#      path: Reseach_Robust.html
+#    - name: Applied Statistics
+#      path: Reseach_Applied.html
+- name: Packages
+  path: Software_Packages.html
+  section_id: Software
+  
+- name: Publications
+  path: Publications.html
+  section_id: Publications
+#  children:
+#      - name: Overview
+#        path: Software.html
+#      - name: Packages 
+#        path: Software_Packages.html
+#      - name: Online Tools 
+#        path: Sofware_Online-Tools.html    
+#      - name: Develloped Code 
+#        path: Sofware_Develloped-Code.html
+#- name: Contact
+#  path: contact.html
+#  section_id: contact
+- name: Blog
+  path: blog/
+  section_id: blog
