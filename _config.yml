@@ -2,20 +2,39 @@
 title: SMAC Group
 subtitle: "Statistical Methods, Applications &amp; Computing Group"
 name: SMAC Group
-email: your-email@domain.com
+email: contact@smac-group.com
 description: > # this means to ignore newlines until "baseurl:"
   Statistical Methods, Applications &amp; Computing Group 
 baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://yourdomain.com" # the base hostname & protocol for your site
 url: "http://smac-group.com" # the base hostname & protocol for your site
-github_username:  smac-group
 
+# Time to battle the mountain goat
+cover: "assets/images/site/goat-c.png"
+
+#logo: "assets/logo.png"
 # Site map plugin
-# Gems
-gems: [jekyll-paginate]
-
-# Build settings
-markdown: kramdown
+gems: [jekyll-paginate]    
 
 paginate: 4
 paginate_path: "blog/page:num"
+
+# Default Time Render
+timezone: America/Chicago
+
+# Render engine
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge 
+
+# Social Media Presence (only GitHub)
+social:
+  - name: GitHub
+    icon: github
+    username: SMAC-Group
+    url: https://github.com/SMAC-Group
+    desc: Fork Our Projects on GitHub
+    share: false
+    
+# Google Analytics Tracking Info
+ga_tracking_id: "UA-71142600-1"
